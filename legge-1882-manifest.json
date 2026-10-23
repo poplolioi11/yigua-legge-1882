@@ -1,0 +1,35 @@
+{
+  "dataset": "legge-1882-hexagram-texts-v0.1.1",
+  "files": [
+    {
+      "file": "legge-1882.json",
+      "bytes": 719115,
+      "sha256": "77b57bbf10659e09cf464751c233addbbe85618b2e5d1c92e79680e9b626de73"
+    },
+    {
+      "file": "legge-1882.txt",
+      "bytes": 149672,
+      "sha256": "9e0b31e85ce95cf01ee9e61429a049f4d5ea8213214f61b94fe7adb03f3171eb"
+    },
+    {
+      "file": "legge-1882.tei.xml",
+      "bytes": 497277,
+      "sha256": "a9a6360b5c6620e7cb61d76664edc246817dc3b08a544e75b620f84534856740"
+    },
+    {
+      "file": "README-legge-1882.md",
+      "bytes": 11357,
+      "sha256": "121f2d60f7f23975e57ce1aeecc203f587132c48aedbca74459bb43ae3979f8b"
+    },
+    {
+      "file": "legge-1882-provenance.json",
+      "bytes": 22904,
+      "sha256": "4be42ecd771d87bdf506398bc8828ddac32e513e8b8c1642f1966d94ebdeaf98"
+    },
+    {
+      "file": "legge-source-audit.json",
+      "bytes": 35344,
+      "sha256": "78754fdd63fcfe385b86d4e9afe6e70c10ea800eb79b5d92dc3182b2c476025c"
+    }
+  ]
+}

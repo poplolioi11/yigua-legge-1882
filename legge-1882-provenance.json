@@ -1,0 +1,570 @@
+{
+  "id": "legge-1882-hexagram-texts-v0.1.1",
+  "version": "0.1.1",
+  "date": "2026-10-23",
+  "title": "James Legge, The Yî King (1882): 64 judgments, 384 line passages and two additional paragraphs",
+  "maintainer": "poplolioi11 / 一卦 yigua.art",
+  "site": "https://yigua.art",
+  "translator": "James Legge",
+  "publication": {
+    "title": "The Sacred Books of China: The Texts of Confucianism. Part II. The Yî King",
+    "series": "The Sacred Books of the East",
+    "volume": "XVI",
+    "place": "Oxford",
+    "publisher": "Clarendon Press",
+    "year": 1882
+  },
+  "witness": {
+    "institution": "Princeton Theological Seminary Library",
+    "archiveIdentifier": "sacredbooksofchi16conf",
+    "url": "https://archive.org/details/sacredbooksofchi16conf",
+    "ocrUrl": "https://archive.org/download/sacredbooksofchi16conf/sacredbooksofchi16conf_djvu.xml",
+    "ocrSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
+    "retrieved": "2026-10-23",
+    "pageMapping": "Printed p = IA viewer index n(p+33) = one-based PDF page p+34; inherited judgment mapping and targeted page images cross-checked."
+  },
+  "scope": {
+    "judgments": 64,
+    "lines": 384,
+    "additionalParagraphs": 2,
+    "passages": 450,
+    "printedPages": [
+      57,
+      210
+    ],
+    "wholeBook": false,
+    "excluded": [
+      "introduction",
+      "small-print commentary",
+      "appendices",
+      "index"
+    ]
+  },
+  "quality": {
+    "status": "ocr-assisted-initial-transcription",
+    "diplomatic": false,
+    "allPagesImageReviewed": false,
+    "independentHumanCollation": false,
+    "judgmentReader": "Existing 64 reader strings preserved byte-for-byte; see legge-source-audit.json (2026-10-09). Their original ingestion is unrecorded. This import supplies a separate OCR layer, not a retroactive source-ingestion claim.",
+    "lineReader": "All 386 numbered passages structurally extracted from this witness OCR and read by AI; targeted scan inspection and corrections, not a complete visual proofreading.",
+    "targetedScanPages": [
+      58,
+      61,
+      65,
+      75,
+      90,
+      100,
+      108,
+      115,
+      123,
+      125,
+      127,
+      132,
+      133,
+      135,
+      145,
+      150,
+      153,
+      155,
+      158,
+      160,
+      171,
+      188,
+      190,
+      200,
+      203,
+      205,
+      208,
+      209,
+      210
+    ],
+    "targetedScanScope": "Images were opened to inspect selected phrases, extraction boundaries or continuation. Listing a page does not assert every glyph on that page was checked.",
+    "knownUncertainty": "No deliberately unresolved illegible word has been guessed. Residual OCR and typography errors may remain outside targeted checks; absence of an uncertainty marker is not a certainty claim."
+  },
+  "layers": {
+    "sourceText": "Selected upstream OCR tokens joined with spaces within OCR lines and newlines between lines/segments; numbering/headings/notes excluded. Not diplomatic transcription, not complete OCR XML; retains upstream OCR misreadings. sourceSegments records printed-page boundaries.",
+    "reader": "Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z.",
+    "heading": "Modern site-authored navigation labels derived from line position/polarity; not verbatim Legge headings.",
+    "name": "Simplified Legge romanization only; English navigation glosses elsewhere in the site are modern metadata, not Legge chapter titles."
+  },
+  "rights": {
+    "historicalText": "Public domain historical English translation (1882); no CC condition is imposed on the historical text.",
+    "archiveStatus": "Internet Archive item copyright-evidence states NOT_IN_COPYRIGHT (US); this is source evidence, not a universal jurisdictional legal guarantee.",
+    "originalMetadata": "Original modern metadata, documentation and arrangement: CC BY 4.0, attribution poplolioi11 / 一卦 yigua.art; applies only where new copyright exists.",
+    "metadataLicense": "https://creativecommons.org/licenses/by/4.0/",
+    "images": "Linked, not redistributed in this data package. Repository/institution image terms remain distinct.",
+    "wikisource": "Not a source of the exported text. Wikisource user-contributed editing/arrangement is not relicensed here."
+  },
+  "aiUse": {
+    "assistant": "OpenAI Codex",
+    "model": "Underlying model identifier not exposed in this task; no guessed model version.",
+    "work": "Source research, deterministic OCR segmentation/format conversion, targeted visual inspection and editorial documentation.",
+    "ocr": "Existing Internet Archive OCR; engine/version not established by this import.",
+    "humanReview": "No independent human collation claimed."
+  },
+  "corrections": [
+    {
+      "id": "legge-31-judgment",
+      "kind": "extraction-boundary",
+      "reason": "Remove the separate OCR section/chapter-heading segment on printed p. 123; existing reader text is unchanged. This is an extraction-boundary correction, not a new image collation.",
+      "beforeSegments": [
+        {
+          "page": 123,
+          "text": "TEXT. SECTION II.\nXXXI. The Hsien Hexagram."
+        },
+        {
+          "page": 123,
+          "text": "Hsien indicates that, (on the fulfilment of the\nconditions implied in it), there will be free course\nand success. Its advantageousness will depend on\nthe being firm and correct, (as) in marrying a young\nlady. There will be good fortune."
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 123,
+          "text": "Hsien indicates that, (on the fulfilment of the\nconditions implied in it), there will be free course\nand success. Its advantageousness will depend on\nthe being firm and correct, (as) in marrying a young\nlady. There will be good fortune."
+        }
+      ]
+    },
+    {
+      "id": "legge-52-judgment",
+      "kind": "extraction-boundary",
+      "reason": "Remove the separate OCR chapter-heading segment on printed p. 175; existing reader text is unchanged. This is an extraction-boundary correction, not a new image collation.",
+      "beforeSegments": [
+        {
+          "page": 175,
+          "text": "LI I. The Kan Hexagram."
+        },
+        {
+          "page": 175,
+          "text": "When one's resting is like that of the back, and\nhe loses all consciousness of self; when he walks"
+        },
+        {
+          "page": 176,
+          "text": "in his courtyard, and does not see any (of the per-\nsons) in it, — there will be no error."
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 175,
+          "text": "When one's resting is like that of the back, and\nhe loses all consciousness of self; when he walks"
+        },
+        {
+          "page": 176,
+          "text": "in his courtyard, and does not see any (of the per-\nsons) in it, — there will be no error."
+        }
+      ]
+    },
+    {
+      "id": "legge-34-judgment",
+      "kind": "extraction-boundary",
+      "reason": "Exclude small-print commentary accidentally selected by OCR font heuristic.",
+      "beforeSegments": [
+        {
+          "page": 129,
+          "text": "Ti Awang indicates that (under the conditions\nwhich it symbolises) it will be advantageous to be\nfirm and correct."
+        },
+        {
+          "page": 129,
+          "text": "the necessity of the time requires superior men to withdraw before"
+        },
+        {
+          "page": 129,
+          "text": "dlel^rg-aWay' WhlCh W°Uld °nl^ a^ravate the ^il and\ndanger oi the time."
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 129,
+          "text": "Ti Awang indicates that (under the conditions\nwhich it symbolises) it will be advantageous to be\nfirm and correct."
+        }
+      ]
+    },
+    {
+      "id": "legge-35-line-6",
+      "kind": "extraction-boundary",
+      "reason": "Exclude small-print commentary after body rule on printed p. 133; scan inspected.",
+      "beforeSegments": [
+        {
+          "page": 132,
+          "text": "The topmost line, undivided, shows one ad-\nvancing his horns. But he only uses them to punish\nthe (rebellious people of his own) city. The position"
+        },
+        {
+          "page": 133,
+          "text": "is perilous, but there will be good fortune. (Yet)\nhowever firm and correct he may be, there will be\noccasion for regret."
+        },
+        {
+          "page": 133,
+          "text": "expresses its subject"
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 132,
+          "text": "The topmost line, undivided, shows one ad-\nvancing his horns. But he only uses them to punish\nthe (rebellious people of his own) city. The position"
+        },
+        {
+          "page": 133,
+          "text": "is perilous, but there will be good fortune. (Yet)\nhowever firm and correct he may be, there will be\noccasion for regret."
+        }
+      ]
+    },
+    {
+      "id": "legge-43-line-6",
+      "kind": "extraction-boundary",
+      "reason": "Exclude small-print commentary after body rule on printed p. 153; scan inspected.",
+      "beforeSegments": [
+        {
+          "page": 153,
+          "text": "The sixth line, divided, shows its subject with-\nout any (helpers) on whom to call. His end will\nbe evil."
+        },
+        {
+          "page": 153,
+          "text": "of the third month, when\nthe last remnant, cold and dark, of winter, represented by the sixth"
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 153,
+          "text": "The sixth line, divided, shows its subject with-\nout any (helpers) on whom to call. His end will\nbe evil."
+        }
+      ]
+    },
+    {
+      "id": "legge-50-line-6",
+      "kind": "extraction-boundary",
+      "reason": "Exclude small-print commentary after body rule on printed p. 171; scan inspected.",
+      "beforeSegments": [
+        {
+          "page": 171,
+          "text": "The sixth line, undivided, shows the caldron\nwith rings of jade. There will be great good for-\ntune, and all action taken will be in every way\nadvantageous."
+        },
+        {
+          "page": 171,
+          "text": "L. Ting was originally a pictorial character, representing a caldron"
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 171,
+          "text": "The sixth line, undivided, shows the caldron\nwith rings of jade. There will be great good for-\ntune, and all action taken will be in every way\nadvantageous."
+        }
+      ]
+    },
+    {
+      "id": "legge-53-judgment",
+      "kind": "extraction-boundary",
+      "reason": "Separate OCR chapter heading from judgment body.",
+      "beforeSegments": [
+        {
+          "page": 178,
+          "text": "LI 1 1. The A^ien Hexagram."
+        },
+        {
+          "page": 178,
+          "text": "Kien suggests to us the marriage of a young\nlady, and the good fortune (attending it). There\nwill be advantage in being firm and correct."
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 178,
+          "text": "Kien suggests to us the marriage of a young\nlady, and the good fortune (attending it). There\nwill be advantage in being firm and correct."
+        }
+      ]
+    },
+    {
+      "id": "legge-61-judgment",
+      "kind": "extraction-boundary",
+      "reason": "Exclude commentary fused into body paragraph by upstream OCR; continuation is printed p. 200.",
+      "beforeSegments": [
+        {
+          "page": 199,
+          "text": "Kur\\g Fu (moves even) pigs and fish, and leads\nto good fortune. There will be advantage in cross-\nimportant point concerning ' regulations ' is brought out in the con-\nclusion of the Thwan, — that they must be adapted to circumstances,\nand not made too strict and severe."
+        },
+        {
+          "page": 200,
+          "text": "ing the great stream. There will be advantage in\nbeing firm and correct."
+        }
+      ],
+      "afterSegments": [
+        {
+          "page": 199,
+          "text": "Kur\\g Fu (moves even) pigs and fish, and leads\nto good fortune. There will be advantage in cross-"
+        },
+        {
+          "page": 200,
+          "text": "ing the great stream. There will be advantage in\nbeing firm and correct."
+        }
+      ]
+    },
+    {
+      "id": "legge-37-judgment",
+      "kind": "extraction-boundary",
+      "reason": "Restore OCR paragraph correct. at printed p. 137, omitted by font-size heuristic; existing reader already contained it."
+    },
+    {
+      "id": "legge-04-line-3",
+      "kind": "scan-checked-reader-correction",
+      "before": "^keep",
+      "after": "keep",
+      "page": 65,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n98/mode/1up",
+      "reason": "OCR glyph artifact",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-04-line-5",
+      "kind": "scan-checked-reader-correction",
+      "before": "will, be",
+      "after": "will be",
+      "page": 65,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n98/mode/1up",
+      "reason": "OCR punctuation artifact",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-08-line-4",
+      "kind": "scan-checked-reader-correction",
+      "before": "eood",
+      "after": "good",
+      "page": 75,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n108/mode/1up",
+      "reason": "OCR g",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-15-line-1",
+      "kind": "scan-checked-reader-correction",
+      "before": "o-ood",
+      "after": "good",
+      "page": 90,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n123/mode/1up",
+      "reason": "OCR g",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-20-line-3",
+      "kind": "scan-checked-reader-correction",
+      "before": "own- life",
+      "after": "own life",
+      "page": 100,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n133/mode/1up",
+      "reason": "OCR interpreted a small scan mark as hyphen",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-24-line-6",
+      "kind": "scan-checked-reader-correction",
+      "before": "*evil",
+      "after": "evil",
+      "page": 108,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n141/mode/1up",
+      "reason": "OCR interpreted a scan mark as asterisk",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-27-line-6",
+      "kind": "scan-checked-reader-correction",
+      "before": "orreat",
+      "after": "great",
+      "page": 115,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n148/mode/1up",
+      "reason": "OCR g",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-31-line-2",
+      "kind": "scan-checked-reader-correction",
+      "before": "leo\\",
+      "after": "leg.",
+      "page": 123,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n156/mode/1up",
+      "reason": "OCR g and full stop",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-35-line-4",
+      "kind": "scan-checked-reader-correction",
+      "before": "he maybe",
+      "after": "he may be",
+      "page": 132,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n165/mode/1up",
+      "reason": "Word boundary visible in scan",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-36-line-4",
+      "kind": "scan-checked-reader-correction",
+      "before": "Ming 1",
+      "after": "Ming I",
+      "page": 135,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n168/mode/1up",
+      "reason": "Capital I and simplified diacritic",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-36-line-5",
+      "kind": "scan-checked-reader-correction",
+      "before": "K\\ fulfilled",
+      "after": "Ki fulfilled",
+      "page": 135,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n168/mode/1up",
+      "reason": "Printed Kî; reader simplifies circumflex and italic K",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-40-line-2",
+      "kind": "scan-checked-reader-correction",
+      "before": "catch in hunting",
+      "after": "catch, in hunting",
+      "page": 145,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n178/mode/1up",
+      "reason": "Comma visible in scan",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-40-line-4",
+      "kind": "scan-checked-reader-correction",
+      "before": "undivided (it is said)",
+      "after": "undivided, (it is said)",
+      "page": 145,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n178/mode/1up",
+      "reason": "Comma visible in scan",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-40-line-5",
+      "kind": "scan-checked-reader-correction",
+      "before": "(its subject) the superior",
+      "after": "(its subject), the superior",
+      "page": 145,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n178/mode/1up",
+      "reason": "Comma visible in scan",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-40-line-5",
+      "kind": "scan-checked-reader-correction",
+      "before": "o-ood",
+      "after": "good",
+      "page": 145,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n178/mode/1up",
+      "reason": "OCR g",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-42-line-5",
+      "kind": "scan-checked-reader-correction",
+      "before": "or>odness",
+      "after": "goodness",
+      "page": 150,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n183/mode/1up",
+      "reason": "OCR goo",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-43-line-4",
+      "kind": "scan-checked-reader-correction",
+      "before": "difficulty..",
+      "after": "difficulty.",
+      "page": 153,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n186/mode/1up",
+      "reason": "Reader omits isolated scan/OCR dot after printed full stop",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-46-line-4",
+      "kind": "scan-checked-reader-correction",
+      "before": "mount KJA",
+      "after": "mount Khi",
+      "page": 160,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n193/mode/1up",
+      "reason": "Printed Khî; reader simplifies circumflex and italic Kh",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-56-line-4",
+      "kind": "scan-checked-reader-correction",
+      "before": "(but still saying)/! am",
+      "after": "(but still saying), 'I am",
+      "page": 188,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n221/mode/1up",
+      "reason": "Comma, opening quote and I visible in scan",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-57-line-2",
+      "kind": "scan-checked-reader-correction",
+      "before": "crood",
+      "after": "good",
+      "page": 190,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n223/mode/1up",
+      "reason": "OCR g",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-61-line-2",
+      "kind": "scan-checked-reader-correction",
+      "before": "T will partake",
+      "after": "'I will partake",
+      "page": 200,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n233/mode/1up",
+      "reason": "Opening quote and I visible in scan",
+      "reviewer": "AI visual inspection, not independent human collation"
+    },
+    {
+      "id": "legge-63-line-3",
+      "kind": "scan-checked-reader-correction",
+      "before": "Kao 3ung",
+      "after": "Kao Zung",
+      "page": 205,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n238/mode/1up",
+      "reason": "Historical 3-shaped consonant displayed as Z; not a modern translation",
+      "reviewer": "AI visual inspection, not independent human collation"
+    }
+  ],
+  "editorialNotes": [
+    {
+      "id": "legge-04-line-2",
+      "note": "Printed p. 65 has an unmatched opening parenthesis before even; retained without conjectural repair.",
+      "page": 65
+    },
+    {
+      "id": "legge-62-line-6",
+      "note": "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains the lexical hyphen in self-produced.",
+      "page": 203
+    },
+    {
+      "id": "legge-45-line-5",
+      "note": "Reader retains the lexical hyphen in long-continued across the printed line break.",
+      "page": 158
+    }
+  ],
+  "validation": {
+    "teiSchemaVersion": "4.12.0",
+    "teiSchemaUrl": "https://www.tei-c.org/Vault/P5/4.12.0/xml/tei/custom/schema/relaxng/tei_all.rng",
+    "teiSchemaSha256": "b0f115095ead2ccc6933aa3365c6f4a82cba3b2ec7eee7f76bb616d7a63b7e48",
+    "checks": [
+      "JSON parse",
+      "450 unique IDs and fixed counts",
+      "page URLs and lower-to-upper line order",
+      "64 historical judgment strings unchanged",
+      "TXT reading-text round trip",
+      "TEI secure parse and full reading/OCR/source-link round trip",
+      "TEI P5 4.12.0 Relax NG"
+    ],
+    "notPerformed": [
+      "independent human collation",
+      "full-image proofreading",
+      "Schematron",
+      "custom ODD",
+      "complete textual-variant apparatus"
+    ]
+  },
+  "publicationIdentifiers": {
+    "versionDoi": "10.5281/zenodo.23585522",
+    "versionDoiUrl": "https://doi.org/10.5281/zenodo.23585522",
+    "doiStateAtPreparation": "reserved; not yet published or registered at package preparation",
+    "repository": "https://github.com/poplolioi11/yigua-legge-1882",
+    "releaseVersion": "0.1.1",
+    "statusNote": "Preparation-state metadata is historical. Check the public GitHub release and Zenodo record for current publication state; no concept DOI is asserted."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "dataset": "legge-1882-hexagram-texts-v0.1.1",
+  "packageVersion": "0.1.1",
+  "status": "ready-for-review",
+  "preparationDate": "2026-10-23",
+  "versionDoi": "10.5281/zenodo.23585522",
+  "doiStateAtPreparation": "reserved; not yet published or registered",
+  "readerIdentitySha256": "79ef55f8c194b8f0fa8aadc64ffa86dfecd90dd270663c0cde0bbd210d588f33",
+  "scope": "Allowlisted text/data/documentation only; no private scripts, paths, images, full OCR, jobs or schema tools.",
+  "manifestRule": "This manifest lists every public payload file except itself and PACKAGE-SHA256SUMS. PACKAGE-SHA256SUMS additionally covers this manifest; neither file hashes itself.",
+  "files": [
+    {
+      "file": "legge-1882.json",
+      "bytes": 719115,
+      "sha256": "77b57bbf10659e09cf464751c233addbbe85618b2e5d1c92e79680e9b626de73"
+    },
+    {
+      "file": "legge-1882.txt",
+      "bytes": 149672,
+      "sha256": "9e0b31e85ce95cf01ee9e61429a049f4d5ea8213214f61b94fe7adb03f3171eb"
+    },
+    {
+      "file": "legge-1882.tei.xml",
+      "bytes": 497277,
+      "sha256": "a9a6360b5c6620e7cb61d76664edc246817dc3b08a544e75b620f84534856740"
+    },
+    {
+      "file": "README-legge-1882.md",
+      "bytes": 11357,
+      "sha256": "121f2d60f7f23975e57ce1aeecc203f587132c48aedbca74459bb43ae3979f8b"
+    },
+    {
+      "file": "legge-1882-provenance.json",
+      "bytes": 22904,
+      "sha256": "4be42ecd771d87bdf506398bc8828ddac32e513e8b8c1642f1966d94ebdeaf98"
+    },
+    {
+      "file": "legge-source-audit.json",
+      "bytes": 35344,
+      "sha256": "78754fdd63fcfe385b86d4e9afe6e70c10ea800eb79b5d92dc3182b2c476025c"
+    },
+    {
+      "file": "legge-1882-manifest.json",
+      "bytes": 1004,
+      "sha256": "c656590ebc030dd98e092d88b2a884902bcb4ae3a2fff16d8b97140bd792ee7a"
+    },
+    {
+      "file": "legge-1882-SHA256SUMS",
+      "bytes": 518,
+      "sha256": "e268ce0e03e71454849b256419cdfa9dbcbfbfb29005e32b070ac06dd6a343c5"
+    },
+    {
+      "file": "README.md",
+      "bytes": 12417,
+      "sha256": "f990ff8b80c41154473f422d813094e9c85a00980b5bc1c10e050023b6a6836e"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 2376,
+      "sha256": "412ebc8ceb8064d5cc4a36f1290b76f3b22e3fed20fb5a3d7d8c34c7a1d35c1a"
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "bytes": 1492,
+      "sha256": "c5cb9ae813b60b49b4073e158edc817120c62ef0dbe8e42cbc121990cffe3b42"
+    },
+    {
+      "file": "CHANGELOG.md",
+      "bytes": 1518,
+      "sha256": "b016d02338cbe3c4c2adb1111eb0a0c77aaec9f8f0ea88bee0cb9e397ce5b752"
+    },
+    {
+      "file": "CITATION.cff",
+      "bytes": 1987,
+      "sha256": "00e39bad2b13c09c376ca5b19ea91df6af10ea32be97e2d28fe9f4a642e4968c"
+    },
+    {
+      "file": "VALIDATION.json",
+      "bytes": 4325,
+      "sha256": "ef113e034f97f0b87e556271019724cf373d6d90e7c874fb41e52c4ab32c0e1d"
+    }
+  ]
+}

@@ -1,0 +1,1057 @@
+{
+  "schemaVersion": 1,
+  "id": "james-legge-yi-king",
+  "reviewedAt": "2026-10-09",
+  "method": "AI-assisted visual comparison of each complete judgment, including continuation pages. OCR used only to locate passages. This is one review pass, not independent human scholarly certification.",
+  "ingestion": {
+    "status": "unrecorded",
+    "introducedAt": "2026-09-22",
+    "commit": "b241a0a0b2523cf0b0f6b8d864b64f15ad00bbe9",
+    "note": "New scan agreement does not establish the historical digital ingestion source."
+  },
+  "witness": {
+    "title": "The Sacred Books of China: The Texts of Confucianism. Part II: The Yî King",
+    "translator": "James Legge",
+    "series": "The Sacred Books of the East, XVI",
+    "publicationYear": 1882,
+    "publisher": "Oxford: At the Clarendon Press",
+    "holdingInstitution": "Princeton Theological Seminary Library",
+    "itemUrl": "https://archive.org/details/sacredbooksofchi16conf",
+    "titlePageUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n8/mode/1up",
+    "seriesTitleUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n6/mode/1up",
+    "catalogueDate": "1879-85.",
+    "catalogueScope": "Four-volume set, not the imprint date of this volume",
+    "catalogueUrl": "https://archive.org/download/sacredbooksofchi16conf/sacredbooksofchi16conf_marc.xml",
+    "pdfUrl": "https://archive.org/download/sacredbooksofchi16conf/sacredbooksofchi16conf.pdf",
+    "pdfSha256": "216991696663472339e90f1a64aad45998fbe9de711885ab00744572475896c6",
+    "rightsMetadata": {
+      "possibleCopyrightStatus": "NOT_IN_COPYRIGHT",
+      "copyrightRegion": "US",
+      "explicitCcLicenseFound": false,
+      "note": "IA metadata's 2008 no-visible-notice statement is attributed metadata. Both visually inspected title pages actually print [All rights reserved]. No broader legal opinion or claim about modern transcriptions is made."
+    }
+  },
+  "scope": {
+    "judgments": 64,
+    "lineTexts": false,
+    "commentaries": false,
+    "appendices": false
+  },
+  "transcription": {
+    "diplomatic": false,
+    "retainedDifferences": [
+      "Existing ASCII romanizations are retained; original diacritics and italic consonant distinctions are not restored.",
+      "Historical 3-shaped consonant glyphs remain represented as Z; no claim of glyph identity.",
+      "Original letterspacing, paragraphs, end-of-line hyphens, apostrophe styles and spacing around punctuation are normalized.",
+      "In hexagram 51 the original measure lî remains li."
+    ],
+    "note": "This states visible differences in the existing website text, not an inferred original editorial policy.",
+    "notationLegend": "K* and Z* in the records denote letters printed in italic type in the original; the asterisk is review notation, not an original character. The phrase 3-shaped initial describes a historical glyph without assigning an unverified Unicode identity."
+  },
+  "currentTextSha256": "7949a3faa9fdda9283e5389b3339c503d95f879cec70e6d879ddc0b95e8ca4f5",
+  "hashRule": "SHA-256 of UTF-8 JSON.stringify of the 64 displayed judgments in King Wen order; source labels excluded.",
+  "changes": [
+    {
+      "hexagram": 24,
+      "before": "committed .",
+      "after": "committed.",
+      "page": {
+        "printed": 108,
+        "pdf": 142,
+        "viewerIndex": 141,
+        "url": "https://archive.org/details/sacredbooksofchi16conf/page/n141/mode/1up"
+      }
+    }
+  ],
+  "records": [
+    {
+      "hexagram": 1,
+      "pages": [
+        {
+          "printed": 57,
+          "pdf": 91,
+          "viewerIndex": 90,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n90/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Original name contains italic type; current name is plain."
+    },
+    {
+      "hexagram": 2,
+      "pages": [
+        {
+          "printed": 59,
+          "pdf": 93,
+          "viewerIndex": 92,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n92/mode/1up"
+        },
+        {
+          "printed": 60,
+          "pdf": 94,
+          "viewerIndex": 93,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n93/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Breve in Khwăn omitted."
+    },
+    {
+      "hexagram": 3,
+      "pages": [
+        {
+          "printed": 62,
+          "pdf": 96,
+          "viewerIndex": 95,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n95/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Original name contains italic type; current name is plain."
+    },
+    {
+      "hexagram": 4,
+      "pages": [
+        {
+          "printed": 64,
+          "pdf": 98,
+          "viewerIndex": 97,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n97/mode/1up"
+        },
+        {
+          "printed": 65,
+          "pdf": 99,
+          "viewerIndex": 98,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n98/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Breve in Măng omitted."
+    },
+    {
+      "hexagram": 5,
+      "pages": [
+        {
+          "printed": 67,
+          "pdf": 101,
+          "viewerIndex": 100,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n100/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Diaeresis in Hsü omitted. Original does include comma in 'that, with'; no correction needed."
+    },
+    {
+      "hexagram": 6,
+      "pages": [
+        {
+          "printed": 69,
+          "pdf": 103,
+          "viewerIndex": 102,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n102/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Original curved apostrophe in one's represented as ASCII apostrophe."
+    },
+    {
+      "hexagram": 7,
+      "pages": [
+        {
+          "printed": 71,
+          "pdf": 105,
+          "viewerIndex": 104,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n104/mode/1up"
+        },
+        {
+          "printed": 72,
+          "pdf": 106,
+          "viewerIndex": 105,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n105/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": ""
+    },
+    {
+      "hexagram": 8,
+      "pages": [
+        {
+          "printed": 73,
+          "pdf": 107,
+          "viewerIndex": 106,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n106/mode/1up"
+        },
+        {
+          "printed": 74,
+          "pdf": 108,
+          "viewerIndex": 107,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n107/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Pî omitted."
+    },
+    {
+      "hexagram": 9,
+      "pages": [
+        {
+          "printed": 76,
+          "pdf": 110,
+          "viewerIndex": 109,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n109/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflexes in Hsiâo Khû and italic type omitted."
+    },
+    {
+      "hexagram": 10,
+      "pages": [
+        {
+          "printed": 78,
+          "pdf": 112,
+          "viewerIndex": 111,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n111/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Lî omitted."
+    },
+    {
+      "hexagram": 11,
+      "pages": [
+        {
+          "printed": 81,
+          "pdf": 115,
+          "viewerIndex": 114,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n114/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Thâi omitted."
+    },
+    {
+      "hexagram": 12,
+      "pages": [
+        {
+          "printed": 83,
+          "pdf": 117,
+          "viewerIndex": 116,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n116/mode/1up"
+        },
+        {
+          "printed": 84,
+          "pdf": 118,
+          "viewerIndex": 117,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n117/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Phî omitted."
+    },
+    {
+      "hexagram": 13,
+      "pages": [
+        {
+          "printed": 86,
+          "pdf": 120,
+          "viewerIndex": 119,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n119/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Breve in Zăn and italic type omitted. Original curved single quotation marks around Union of men represented as ASCII quotes."
+    },
+    {
+      "hexagram": 14,
+      "pages": [
+        {
+          "printed": 88,
+          "pdf": 122,
+          "viewerIndex": 121,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n121/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflexes in Tâ Yû omitted."
+    },
+    {
+      "hexagram": 15,
+      "pages": [
+        {
+          "printed": 89,
+          "pdf": 123,
+          "viewerIndex": 122,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n122/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Original name contains italic type; current name is plain."
+    },
+    {
+      "hexagram": 16,
+      "pages": [
+        {
+          "printed": 91,
+          "pdf": 125,
+          "viewerIndex": 124,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n124/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Diaeresis in Yü omitted."
+    },
+    {
+      "hexagram": 17,
+      "pages": [
+        {
+          "printed": 93,
+          "pdf": 127,
+          "viewerIndex": 126,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n126/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": ""
+    },
+    {
+      "hexagram": 18,
+      "pages": [
+        {
+          "printed": 95,
+          "pdf": 129,
+          "viewerIndex": 128,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n128/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Kû omitted."
+    },
+    {
+      "hexagram": 19,
+      "pages": [
+        {
+          "printed": 97,
+          "pdf": 131,
+          "viewerIndex": 130,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n130/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": ""
+    },
+    {
+      "hexagram": 20,
+      "pages": [
+        {
+          "printed": 99,
+          "pdf": 133,
+          "viewerIndex": 132,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n132/mode/1up"
+        },
+        {
+          "printed": 100,
+          "pdf": 134,
+          "viewerIndex": 133,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n133/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Kwân omitted. Semicolon plus dash is preserved."
+    },
+    {
+      "hexagram": 21,
+      "pages": [
+        {
+          "printed": 101,
+          "pdf": 135,
+          "viewerIndex": 134,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n134/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Original wording is legal constraints, not legal restraints."
+    },
+    {
+      "hexagram": 22,
+      "pages": [
+        {
+          "printed": 103,
+          "pdf": 137,
+          "viewerIndex": 136,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n136/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Pî omitted."
+    },
+    {
+      "hexagram": 23,
+      "pages": [
+        {
+          "printed": 105,
+          "pdf": 139,
+          "viewerIndex": 138,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n138/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": ""
+    },
+    {
+      "hexagram": 24,
+      "pages": [
+        {
+          "printed": 107,
+          "pdf": 141,
+          "viewerIndex": 140,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n140/mode/1up"
+        },
+        {
+          "printed": 108,
+          "pdf": 142,
+          "viewerIndex": 141,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n141/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Fû omitted. Pre-review current committed . has an extra space before the period; original committed.",
+      "correction": "Extra space before the period after committed removed in 1.3.7."
+    },
+    {
+      "hexagram": 25,
+      "pages": [
+        {
+          "printed": 109,
+          "pdf": 143,
+          "viewerIndex": 142,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n142/mode/1up"
+        },
+        {
+          "printed": 110,
+          "pdf": 144,
+          "viewerIndex": 143,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n143/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Wû omitted."
+    },
+    {
+      "hexagram": 26,
+      "pages": [
+        {
+          "printed": 112,
+          "pdf": 146,
+          "viewerIndex": 145,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n145/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflexes in Tâ Khû and italic type omitted."
+    },
+    {
+      "hexagram": 27,
+      "pages": [
+        {
+          "printed": 114,
+          "pdf": 148,
+          "viewerIndex": 147,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n147/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Î omitted."
+    },
+    {
+      "hexagram": 28,
+      "pages": [
+        {
+          "printed": 116,
+          "pdf": 150,
+          "viewerIndex": 149,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n149/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Tâ Kwo omitted."
+    },
+    {
+      "hexagram": 29,
+      "pages": [
+        {
+          "printed": 118,
+          "pdf": 152,
+          "viewerIndex": 151,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n151/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Enlarged judgment image has Khan with plain a; the contents page prints Khân, which is not silently substituted here."
+    },
+    {
+      "hexagram": 30,
+      "pages": [
+        {
+          "printed": 120,
+          "pdf": 154,
+          "viewerIndex": 153,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n153/mode/1up"
+        },
+        {
+          "printed": 121,
+          "pdf": 155,
+          "viewerIndex": 154,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n154/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Circumflex in Lî omitted."
+    },
+    {
+      "hexagram": 31,
+      "pages": [
+        {
+          "printed": 123,
+          "pdf": 157,
+          "viewerIndex": 156,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n156/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": ""
+    },
+    {
+      "hexagram": 32,
+      "pages": [
+        {
+          "printed": 125,
+          "pdf": 159,
+          "viewerIndex": 158,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n158/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Breve in Hăng omitted."
+    },
+    {
+      "hexagram": 33,
+      "pages": [
+        {
+          "printed": 127,
+          "pdf": 161,
+          "viewerIndex": 160,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n160/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full agreement after layout normalization; `Thun` unchanged."
+    },
+    {
+      "hexagram": 34,
+      "pages": [
+        {
+          "printed": 129,
+          "pdf": 163,
+          "viewerIndex": 162,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n162/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Tâ K*wang`; site `Ta Kwang` removes â and the italic K distinction."
+    },
+    {
+      "hexagram": 35,
+      "pages": [
+        {
+          "printed": 131,
+          "pdf": 165,
+          "viewerIndex": 164,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n164/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan name begins with the 3-shaped initial; site `Zin`."
+    },
+    {
+      "hexagram": 36,
+      "pages": [
+        {
+          "printed": 134,
+          "pdf": 168,
+          "viewerIndex": 167,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n167/mode/1up"
+        },
+        {
+          "printed": 135,
+          "pdf": 169,
+          "viewerIndex": 168,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n168/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Ming Î`; site `Ming I`. Continuation ends `difficulty (of the position), and maintain firm correctness.`"
+    },
+    {
+      "hexagram": 37,
+      "pages": [
+        {
+          "printed": 136,
+          "pdf": 170,
+          "viewerIndex": 169,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n169/mode/1up"
+        },
+        {
+          "printed": 137,
+          "pdf": 171,
+          "viewerIndex": 170,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n170/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*iâ Z*ăn`; site `Kia Zan` removes â, ă, and letter-style distinctions. Continuation is `most advantageous is that the wife be firm and correct.`"
+    },
+    {
+      "hexagram": 38,
+      "pages": [
+        {
+          "printed": 139,
+          "pdf": 173,
+          "viewerIndex": 172,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n172/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full English-word/punctuation agreement after layout normalization; site name `Khwei`. No diacritic discrepancy identified in this judgment."
+    },
+    {
+      "hexagram": 39,
+      "pages": [
+        {
+          "printed": 141,
+          "pdf": 175,
+          "viewerIndex": 174,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n174/mode/1up"
+        },
+        {
+          "printed": 142,
+          "pdf": 176,
+          "viewerIndex": 175,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n175/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*ien`; site `Kien`. Continuation includes the site’s `(In these circumstances),` punctuation."
+    },
+    {
+      "hexagram": 40,
+      "pages": [
+        {
+          "printed": 144,
+          "pdf": 178,
+          "viewerIndex": 177,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n177/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*ieh`; site `Kieh`."
+    },
+    {
+      "hexagram": 41,
+      "pages": [
+        {
+          "printed": 146,
+          "pdf": 180,
+          "viewerIndex": 179,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n179/mode/1up"
+        },
+        {
+          "printed": 147,
+          "pdf": 181,
+          "viewerIndex": 180,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n180/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full agreement after layout normalization. The scan really does have `grain, (though there be nothing else),`; the comma after `grain` is small but verified again in the detail crop. Do not remove it. `fortune:—freedom` and the website's later semicolons also agree apart from print spacing."
+    },
+    {
+      "hexagram": 42,
+      "pages": [
+        {
+          "printed": 149,
+          "pdf": 183,
+          "viewerIndex": 182,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n182/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Yî`; site `Yi`. The comma in `undertaken, that it will` belongs to the source."
+    },
+    {
+      "hexagram": 43,
+      "pages": [
+        {
+          "printed": 151,
+          "pdf": 185,
+          "viewerIndex": 184,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n184/mode/1up"
+        },
+        {
+          "printed": 152,
+          "pdf": 186,
+          "viewerIndex": 185,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n185/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Kwâi`; site `Kwai`. The source’s typographic apostrophe in `culprit’s` becomes the straight apostrophe in the file."
+    },
+    {
+      "hexagram": 44,
+      "pages": [
+        {
+          "printed": 154,
+          "pdf": 188,
+          "viewerIndex": 187,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n187/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Kâu`; site `Kau`."
+    },
+    {
+      "hexagram": 45,
+      "pages": [
+        {
+          "printed": 156,
+          "pdf": 190,
+          "viewerIndex": 189,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n189/mode/1up"
+        },
+        {
+          "printed": 157,
+          "pdf": 191,
+          "viewerIndex": 190,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n190/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan name has 3-shaped initial + `hui`; site `Zhui`."
+    },
+    {
+      "hexagram": 46,
+      "pages": [
+        {
+          "printed": 159,
+          "pdf": 193,
+          "viewerIndex": 192,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n192/mode/1up"
+        },
+        {
+          "printed": 160,
+          "pdf": 194,
+          "viewerIndex": 193,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n193/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Shăng`; site `Shang`."
+    },
+    {
+      "hexagram": 47,
+      "pages": [
+        {
+          "printed": 161,
+          "pdf": 195,
+          "viewerIndex": 194,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n194/mode/1up"
+        },
+        {
+          "printed": 162,
+          "pdf": 196,
+          "viewerIndex": 195,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n195/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Khwăn`; site `Khwan`."
+    },
+    {
+      "hexagram": 48,
+      "pages": [
+        {
+          "printed": 164,
+          "pdf": 198,
+          "viewerIndex": 197,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n197/mode/1up"
+        },
+        {
+          "printed": 165,
+          "pdf": 199,
+          "viewerIndex": 198,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n198/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan name has 3-shaped initial + `ing`; site `Zing`. The source has `while (the fashion of) its wells undergoes no change`; do not “correct” `undergoes` to `undergo`."
+    },
+    {
+      "hexagram": 49,
+      "pages": [
+        {
+          "printed": 167,
+          "pdf": 201,
+          "viewerIndex": 200,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n200/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full agreement after layout normalization; `Ko` unchanged."
+    },
+    {
+      "hexagram": 50,
+      "pages": [
+        {
+          "printed": 169,
+          "pdf": 203,
+          "viewerIndex": 202,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n202/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full agreement after layout normalization; `Ting` unchanged."
+    },
+    {
+      "hexagram": 51,
+      "pages": [
+        {
+          "printed": 172,
+          "pdf": 206,
+          "viewerIndex": 205,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n205/mode/1up"
+        },
+        {
+          "printed": 173,
+          "pdf": 207,
+          "viewerIndex": 206,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n206/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*ăn`; site `Kan`. Also, the measurement is printed `lî` in `a hundred lî` on p. 173; site `li`. This is a diacritic change outside the hexagram name."
+    },
+    {
+      "hexagram": 52,
+      "pages": [
+        {
+          "printed": 175,
+          "pdf": 209,
+          "viewerIndex": 208,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n208/mode/1up"
+        },
+        {
+          "printed": 176,
+          "pdf": 210,
+          "viewerIndex": 209,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n209/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. The source’s `one’s` becomes straight `one's`; `it,—there` agrees. The judgment itself has no prefixed hexagram name; the website has not omitted one."
+    },
+    {
+      "hexagram": 53,
+      "pages": [
+        {
+          "printed": 178,
+          "pdf": 212,
+          "viewerIndex": 211,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n211/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*ien`; site `Kien`."
+    },
+    {
+      "hexagram": 54,
+      "pages": [
+        {
+          "printed": 180,
+          "pdf": 214,
+          "viewerIndex": 213,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n213/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full agreement after layout normalization; `Kwei Mei` unchanged."
+    },
+    {
+      "hexagram": 55,
+      "pages": [
+        {
+          "printed": 183,
+          "pdf": 217,
+          "viewerIndex": 216,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n216/mode/1up"
+        },
+        {
+          "printed": 184,
+          "pdf": 218,
+          "viewerIndex": 217,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n217/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Făng`; site `Fang`."
+    },
+    {
+      "hexagram": 56,
+      "pages": [
+        {
+          "printed": 187,
+          "pdf": 221,
+          "viewerIndex": 220,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n220/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Lü`; site `Lu`."
+    },
+    {
+      "hexagram": 57,
+      "pages": [
+        {
+          "printed": 189,
+          "pdf": 223,
+          "viewerIndex": 222,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n222/mode/1up"
+        },
+        {
+          "printed": 190,
+          "pdf": 224,
+          "viewerIndex": 223,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n223/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full agreement after layout normalization; `Sun` unchanged."
+    },
+    {
+      "hexagram": 58,
+      "pages": [
+        {
+          "printed": 192,
+          "pdf": 226,
+          "viewerIndex": 225,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n225/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "Full agreement after layout normalization; `Tui` unchanged."
+    },
+    {
+      "hexagram": 59,
+      "pages": [
+        {
+          "printed": 194,
+          "pdf": 228,
+          "viewerIndex": 227,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n227/mode/1up"
+        },
+        {
+          "printed": 195,
+          "pdf": 229,
+          "viewerIndex": 228,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n228/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Hwân`; site `Hwan`."
+    },
+    {
+      "hexagram": 60,
+      "pages": [
+        {
+          "printed": 197,
+          "pdf": 231,
+          "viewerIndex": 230,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n230/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*ieh`; site `Kieh`."
+    },
+    {
+      "hexagram": 61,
+      "pages": [
+        {
+          "printed": 199,
+          "pdf": 233,
+          "viewerIndex": 232,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n232/mode/1up"
+        },
+        {
+          "printed": 200,
+          "pdf": 234,
+          "viewerIndex": 233,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n233/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*ung Fû`; site `Kung Fu`."
+    },
+    {
+      "hexagram": 62,
+      "pages": [
+        {
+          "printed": 201,
+          "pdf": 235,
+          "viewerIndex": 234,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n234/mode/1up"
+        },
+        {
+          "printed": 202,
+          "pdf": 236,
+          "viewerIndex": 235,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n235/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Hsiâo Kwo`; site `Hsiao Kwo`. Source has `wing;—to descend`, agreeing with site apart from print spacing."
+    },
+    {
+      "hexagram": 63,
+      "pages": [
+        {
+          "printed": 204,
+          "pdf": 238,
+          "viewerIndex": 237,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n237/mode/1up"
+        },
+        {
+          "printed": 205,
+          "pdf": 239,
+          "viewerIndex": 238,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n238/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `K*î` + 3-shaped initial + `î`; site `Ki Zi`."
+    },
+    {
+      "hexagram": 64,
+      "pages": [
+        {
+          "printed": 207,
+          "pdf": 241,
+          "viewerIndex": 240,
+          "url": "https://archive.org/details/sacredbooksofchi16conf/page/n240/mode/1up"
+        }
+      ],
+      "result": "English wording checked against images; typography normalized",
+      "notes": "English wording and punctuation agree. Scan `Wei` + 3-shaped initial + `î`; site `Wei Zi`."
+    }
+  ]
+}

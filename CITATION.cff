@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+type: dataset
+message: >-
+  請引用實際使用的固定版本，並另列歷史譯者 James Legge、1882 年版別、
+  印刷頁與條目 ID。此包製備時 DOI 已預留但尚未發布或登記；
+  正式引用前請確認公開紀錄。資料整理者並非歷史譯者，DOI 不表示逐字準確或同儕審查。
+title: "Legge’s Yî King (1882): Hexagram-Text Subset, OCR-Assisted Initial Transcription"
+authors:
+  - name: "poplolioi11 / 一卦 yigua.art"
+    website: "https://yigua.art"
+version: "0.1.1"
+doi: "10.5281/zenodo.23585522"
+url: "https://github.com/poplolioi11/yigua-legge-1882"
+license-url: "https://github.com/poplolioi11/yigua-legge-1882/blob/main/LICENSE"
+abstract: >-
+  Modern dataset prepared by poplolioi11 / 一卦 yigua.art from the Princeton
+  Theological Seminary Library witness digitized by Internet Archive as
+  sacredbooksofchi16conf. Historical English translator: James Legge (1882).
+  Includes 64 judgments, 384 line passages and two additional paragraphs from
+  printed pages 57–210, not the complete book. The source layer records selected
+  upstream OCR; the reader layer normalizes typography and documents targeted
+  corrections. Existing judgment strings retain their separate dated source audit
+  and unrecorded original ingestion. This is an OCR-assisted initial transcription
+  with targeted AI scan checks on 29 page images, without full-image proofreading
+  or independent human second collation. All 450 reader strings are unchanged
+  from the 0.1.0 website snapshot. At package preparation this version DOI was
+  reserved, not yet published or registered. Public-domain historical text has no
+  new CC restrictions; CC BY 4.0 applies only to copyrightable original modern
+  metadata, documentation and arrangement. Images and private processing tools
+  are not redistributed.
+keywords:
+  - Yî King
+  - I Ching
+  - James Legge
+  - "1882"
+  - OCR-assisted initial transcription
+  - digital humanities
+  - TEI
