@@ -3,7 +3,14 @@
 版本：0.1.1（2026-10-23）
 整理與維護：poplolioi11／一卦 yigua.art
 
-語料版、TEI 編碼版與封存候選包版：0.1.1。製備此候選包時，GitHub／Zenodo 尚未正式發布，版本 DOI [10.5281/zenodo.23585522](https://doi.org/10.5281/zenodo.23585522) 已預留（reserved），尚不能據此聲稱已發布或登記；未填尚未取得的全版本 DOI。預定公開庫為 https://github.com/poplolioi11/yigua-legge-1882；發布狀態以公開發行頁與 Zenodo 公開紀錄為準。這段是固定候選包製備時的歷史狀態，日後正式發布不會反向更改當時紀錄。版本 0.1.1 只修正來源層兩個章題抽取邊界及公開文件，450 條閱讀正文與 0.1.0 逐字相同；未新增影像校對。
+語料版、TEI 編碼版與封存包版：0.1.1，已於 2026-10-23 正式公開。
+
+- 固定發行版：[GitHub v0.1.1](https://github.com/poplolioi11/yigua-legge-1882/releases/tag/v0.1.1)。
+- 版本 DOI：[10.5281/zenodo.23585522](https://doi.org/10.5281/zenodo.23585522)，供引用本次固定資料。
+- 全版本 DOI：[10.5281/zenodo.23585521](https://doi.org/10.5281/zenodo.23585521)，供介紹持續維護的資料系列。
+- [Zenodo 公開紀錄](https://zenodo.org/records/23585522)。兩個 DOI 已查得 DataCite `findable`；公開檔案已下載回讀並核對 SHA-256。這些是發布與傳輸驗證，不是文字準確度或學術審查證明。
+
+版本 0.1.1 只修正來源層兩個章題抽取邊界及公開文件，450 條閱讀正文與 0.1.0 逐字相同；未新增影像校對。固定發行包中的文件保留「製備時 DOI 已預留、尚未發布」的歷史狀態；本段為發布後的主分支說明，不反向改寫封存檔案。
 
 本資料包含 64 條卦辭、384 條爻辭，以及乾、坤各一段附加文字，共 450 條。Legge 將後兩段分別列作乾、坤的第 7 段；本站以「用九／用六」對應。這是印刷頁 57–210 的卦爻辭子集，不是全書，不包含小字注解、導論或附錄。
 
@@ -13,7 +20,7 @@ James Legge, trans. *The Sacred Books of China: The Texts of Confucianism. Part 
 
 底本為 [Princeton Theological Seminary Library 藏本之 Internet Archive 掃描](https://archive.org/details/sacredbooksofchi16conf)。新匯入的文字來源是該項目的 [DjVu XML OCR](https://archive.org/download/sacredbooksofchi16conf/sacredbooksofchi16conf_djvu.xml)，不是自行逐字影像轉錄，也未改用其他版次。原始 OCR 完整檔的 SHA-256、下載日期與段落定位見 `legge-1882-provenance.json`。印刷頁 p 對應 IA viewer n(p+33)、一開始計數的 PDF 第 p+34 頁；每條保留所有跨頁連結。
 
-建議資料引用：poplolioi11／一卦 yigua.art 整理，〈Legge《易經》1882 卦爻辭子集：OCR 輔助初錄〉，版本 0.1.1，2026-10-23，https://doi.org/10.5281/zenodo.23585522（製備時已預留，尚未發布／登記）。正式引用前請確認公開紀錄，引用個別文字時另列 James Legge、1882、印刷頁碼與條目 ID。不虛構正式學術審查或機構背書。
+建議資料引用：poplolioi11／一卦 yigua.art 整理，〈Legge《易經》1882 卦爻辭子集：OCR 輔助初錄〉，版本 0.1.1，2026-10-23，https://doi.org/10.5281/zenodo.23585522。引用個別文字時另列 James Legge、1882、印刷頁碼與條目 ID。不虛構正式學術審查或機構背書。
 
 ## 來源層、閱讀層與新增標籤
 
@@ -58,7 +65,7 @@ TEI 使用固定 [TEI P5 4.12.0 `tei_all.rng`](https://www.tei-c.org/Vault/P5/4.
 
 本隔離包另附 LICENSE（分層權利）、CITATION.cff（資料集引用）、CONTRIBUTING.md（更正證據）、CHANGELOG.md（版本差異）及 VALIDATION.json（公開驗證摘要）。CFF 的作者欄是現代整理者，歷史英文譯者 James Legge 另於摘要、底本書目及 TEI 責任聲明列明。
 
-在包目錄內可使用 `shasum -a 256 -c PACKAGE-SHA256SUMS` 檢查整包位元完整性；`shasum -a 256 -c legge-1882-SHA256SUMS` 檢查六個固定資料／說明輸出。PACKAGE-MANIFEST.json 記錄其餘候選檔的大小與 SHA-256，避免自行校驗循環。這些校驗值只檢查檔案完整性，不驗讀字準確。官方 TEI schema 的版本、網址及 SHA-256 已列上方；schema 不包含於本包。
+在固定發行包的目錄內可使用 `shasum -a 256 -c PACKAGE-SHA256SUMS` 檢查整包位元完整性；`shasum -a 256 -c legge-1882-SHA256SUMS` 檢查六個固定資料／說明輸出。PACKAGE-MANIFEST.json 記錄其餘候選檔的大小與 SHA-256，避免自行校驗循環。主分支的 README 與 CITATION.cff 已於發布後補齊正式 DOI 狀態，不在舊校驗表的驗證對象內；若要驗整包，請下載 v0.1.1 的固定 ZIP，不以主分支文件替換其中檔案。這些校驗值只檢查檔案完整性，不驗讀字準確。官方 TEI schema 的版本、網址及 SHA-256 已列上方；schema 不包含於本包。
 
 這份 README 與校驗表對應製備時固定包；日後 GitHub 主分支的文件若持續更新，不表示舊封存包的校驗值也隨之變更。專用處理與驗收腳本未公開，故本包只宣稱所列的實際回讀與驗證結果，不承諾從原圖完整重跑。
 
@@ -66,7 +73,7 @@ TEI 使用固定 [TEI P5 4.12.0 `tei_all.rng`](https://www.tei-c.org/Vault/P5/4.
 
 請經一卦網站提供的聯絡／問題回報入口，附條目 ID、印刷頁、原頁連結、待改字串及理由。後續版本應保留原始 OCR，另更新閱讀層、校改表與校核範圍；有獨立人工覆核時另記實際人員、日期與覆蓋項目，不將 AI 互相比對改稱人工二校。
 
-預定公開庫建立後，也可使用其 Issues 回報；候選包中的 CONTRIBUTING.md 說明所需證據。公開成果包含文字、來源、疑字／訂正成果與驗證摘要；專用處理程式、提示詞、完整助手工作紀錄、工作影像、上游完整 OCR 及網站程式不隨包發布。本包不承諾從原圖完整重跑未公開的處理程序。
+公開庫的 [Issues](https://github.com/poplolioi11/yigua-legge-1882/issues) 已開啟，可附證據回報；CONTRIBUTING.md 說明所需證據。公開成果包含文字、來源、疑字／訂正成果與驗證摘要；專用處理程式、提示詞、完整助手工作紀錄、工作影像、上游完整 OCR 及網站程式不隨包發布。本包不承諾從原圖完整重跑未公開的處理程序。
 
 ## English scholarly abstract
 
@@ -78,4 +85,4 @@ This is an OCR-assisted initial transcription. AI inspected selected phrases, bo
 
 The 1882 historical translation is public-domain material, without additional Creative Commons restrictions imposed by this dataset. CC BY 4.0 applies only to copyrightable original modern metadata, documentation, and arrangement, attributed to poplolioi11 / 一卦 yigua.art. Linked images retain their separate institutional and platform context; they are not redistributed here.
 
-Suggested citation: poplolioi11 / 一卦 yigua.art, ed., “Legge’s *Yî King* (1882): Hexagram-Text Subset, OCR-Assisted Initial Transcription,” version 0.1.1, 23 October 2026, https://doi.org/10.5281/zenodo.23585522. At package preparation this version DOI was reserved, not yet published or registered; this historical preparation-state statement must not be read as confirmation of publication. Check the public record before formal citation. No concept DOI is asserted. Cite individual passages additionally by Legge’s publication, printed page, and dataset ID. Corrections should identify the passage ID, printed page, scan link, proposed reading, and supporting evidence through the site’s contact or issue-reporting channel.
+Suggested citation: poplolioi11 / 一卦 yigua.art, ed., “Legge’s *Yî King* (1882): Hexagram-Text Subset, OCR-Assisted Initial Transcription,” version 0.1.1, 23 October 2026, https://doi.org/10.5281/zenodo.23585522. Published on GitHub and Zenodo on 23 October 2026; the version DOI and concept DOI https://doi.org/10.5281/zenodo.23585521 are registered as findable. Use the version DOI for the fixed dataset and the concept DOI for the evolving series. The archived package retains its accurate historical preparation-state statements; this main-branch README and CITATION.cff provide the post-publication update without changing that package or its checksums. Cite individual passages additionally by Legge’s publication, printed page, and dataset ID. Corrections should identify the passage ID, printed page, scan link, proposed reading, and supporting evidence through the repository’s Issues.
