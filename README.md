@@ -4,6 +4,8 @@
 
 ## 固定版本與引用
 
+**公開狀態（2026-10-28）：GitHub v0.2.0與Zenodo已正式發布；版本DOI及DataCite狀態已公開讀回為findable。此主分支README與CFF為發布後說明；固定ZIP及tag保留製備時reserved的歷史聲明，不覆寫封存。PACKAGE-SHA256SUMS只驗固定發行包，不套用這兩份後來更新的主分支文件。**
+
 - 固定GitHub發行版：[v0.2.0](https://github.com/poplolioi11/yigua-legge-1882/releases/tag/v0.2.0)。
 - 本版DOI：[ 10.5281/zenodo.23723692 ](https://doi.org/10.5281/zenodo.23723692)；全版本DOI：[ 10.5281/zenodo.23585521 ](https://doi.org/10.5281/zenodo.23585521)。
 - 此固定包製備時本版DOI為reserved。是否正式發布及登記，請讀公開紀錄；預留號碼不算發布完成。

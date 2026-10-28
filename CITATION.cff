@@ -1,8 +1,7 @@
 cff-version: 1.2.0
 type: dataset
-message: Please cite the fixed dataset version and separately identify James Legge, the1882
-  witness, printed page and passage ID. AI image collation is not scholarly certification. DOI
-  was reserved at package preparation; verify publication on the public record.
+message: Please cite the fixed published version and separately identify James Legge, the 1882
+  witness, printed page and passage ID. AI image collation is not scholarly certification.
 title: 'Legge''s Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition'
 authors:
 - family-names: Chu
@@ -18,7 +17,8 @@ abstract: AI image collation, not independent human double collation, expert rev
   review. A complete review record does not establish a measured accuracy rate or a diplomatic
   edition. Complete450-passage subset of printedpp57–210 from the Princeton1882 witness. All
   reader strings remain unchanged. Historical text is public domain; CC BY4.0 only for copyrightable
-  original modern editorial material. This version DOI was reserved at preparation.
+  original modern editorial material. Published on GitHub and Zenodo on 2026-10-28; DataCite
+  state findable verified. The fixed archive retains historical preparation-state metadata.
 keywords:
 - I Ching
 - Yijing
