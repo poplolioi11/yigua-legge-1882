@@ -1,45 +1,34 @@
 cff-version: 1.2.0
 type: dataset
-message: >-
-  請引用實際使用的固定版本，並另列歷史譯者 James Legge、1882 年版別、
-  印刷頁與條目 ID。本資料已於 2026-10-23 正式發布，版本 DOI 對應固定包；
-  全版本 DOI 用於介紹系列。資料整理者並非歷史譯者，DOI 不表示逐字準確或同儕審查。
-title: "Legge’s Yî King (1882): Hexagram-Text Subset, OCR-Assisted Initial Transcription"
+message: Please cite the fixed dataset version and separately identify James Legge, the1882
+  witness, printed page and passage ID. AI image collation is not scholarly certification. DOI
+  was reserved at package preparation; verify publication on the public record.
+title: 'Legge''s Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition'
 authors:
-  - name: "poplolioi11 / 一卦 yigua.art"
-    website: "https://yigua.art"
-version: "0.1.1"
-date-released: "2026-10-23"
-doi: "10.5281/zenodo.23585522"
-identifiers:
-  - type: doi
-    value: "10.5281/zenodo.23585521"
-    description: "Concept DOI for the evolving dataset series; use the version DOI above for this fixed dataset."
-url: "https://github.com/poplolioi11/yigua-legge-1882"
-license-url: "https://github.com/poplolioi11/yigua-legge-1882/blob/main/LICENSE"
-abstract: >-
-  Modern dataset prepared by poplolioi11 / 一卦 yigua.art from the Princeton
-  Theological Seminary Library witness digitized by Internet Archive as
-  sacredbooksofchi16conf. Historical English translator: James Legge (1882).
-  Includes 64 judgments, 384 line passages and two additional paragraphs from
-  printed pages 57–210, not the complete book. The source layer records selected
-  upstream OCR; the reader layer normalizes typography and documents targeted
-  corrections. Existing judgment strings retain their separate dated source audit
-  and unrecorded original ingestion. This is an OCR-assisted initial transcription
-  with targeted AI scan checks on 29 page images, without full-image proofreading
-  or independent human second collation. All 450 reader strings are unchanged
-  from the 0.1.0 website snapshot. Published on 23 October 2026; the version and
-  concept DOIs are registered as findable. Archived files retain their historical
-  preparation-state statements; this main-branch citation is a post-publication
-  update and does not replace archived files. Public-domain historical text has no
-  new CC restrictions; CC BY 4.0 applies only to copyrightable original modern
-  metadata, documentation and arrangement. Images and private processing tools
-  are not redistributed.
+- family-names: Chu
+  given-names: Chen-Yu
+  orcid: https://orcid.org/0009-0003-9738-6914
+  website: https://github.com/poplolioi11
+version: 0.2.0
+doi: 10.5281/zenodo.23723692
+url: https://github.com/poplolioi11/yigua-legge-1882
+license-url: https://github.com/poplolioi11/yigua-legge-1882/blob/v0.2.0/LICENSE
+date-released: '2026-10-28'
+abstract: AI image collation, not independent human double collation, expert review or peer
+  review. A complete review record does not establish a measured accuracy rate or a diplomatic
+  edition. Complete450-passage subset of printedpp57–210 from the Princeton1882 witness. All
+  reader strings remain unchanged. Historical text is public domain; CC BY4.0 only for copyrightable
+  original modern editorial material. This version DOI was reserved at preparation.
 keywords:
-  - Yî King
-  - I Ching
-  - James Legge
-  - "1882"
-  - OCR-assisted initial transcription
-  - digital humanities
-  - TEI
+- I Ching
+- Yijing
+- James Legge
+- '1882'
+- Sinology
+- translation studies
+- historical English translation
+- digital humanities
+- TEI XML
+- 易經英譯
+- 漢學史
+- AI image collation

@@ -1,16 +1,9 @@
-# 訂正與共同維護
+# 訂正與參與 / Corrections
 
-本資料是 OCR 輔助結構化初錄，未全面逐字影像覆核，也未經獨立人工二校。歡迎附原頁證據的訂正。預定公開庫建立後，請使用 https://github.com/poplolioi11/yigua-legge-1882/issues；若尚未公開，可透過一卦網站的聯絡／問題回報入口提供相同資訊。
+本版是固定450段卦爻辭子集的AI獨立影像讀字與差異覆核閱讀版，非全書、人工雙校或專家定本；印刷與字碼細節仍有未解紀錄。
 
-請提供：
+請於 https://github.com/poplolioi11/yigua-legge-1882/issues 提供：條目ID、印刷頁、Princeton原頁連結、現有讀法、建議讀法，以及可核對的字形／標點證據。語意較順不是足以替換原印的理由。現代譯注不得混入公有領域原文。
 
-- 條目 ID，例如 legge-31-judgment 或 legge-64-line-6。
-- 印刷頁碼與原頁連結；如為跨頁文字，請列所有相關頁面。
-- 現錄字串、建議字串與理由，並指出對應位置。
-- 證據屬原刻影像、同版別旁證、其他版本或編輯建議；不同角色請分開。
+請區分原OCR、閱讀層、來源影像可見字形與編者解釋。原刻可能有誤植；忠實記錄與校訂建議應分層。既有字串或定位的修改另發版本，不覆寫已被引用的GitHub tag或Zenodo版本。請勿在Issues放私人帳號資料或未授權影像。
 
-請不要直接以現代通行本、另一電子稿或模型記憶替代本底本。閱讀層的空白、斷行與歷史羅馬字簡化已明示；若建議恢復字形，請分清原刻字形、Unicode表示與顯示層。
-
-維護者會核對來源後，保留原始 OCR、記錄訂正、更新閱讀層或來源邊界，並如實記載覆核範圍。AI 比對或定點看圖不會改稱人工二校。已正式發布的固定資料版本、tag 與封存檔不靜默覆寫；實質資料變更另發版本。一般文件補充與語料訂正分開處理。
-
-回報不要求真實姓名、學校、私人信箱或用途。請勿上傳私人帳號資料、登入資訊、未授權第三方全文或不必要的個人資訊。投稿者可自行註明希望公開的署名；公有領域文字不因此被新增使用限制。
+The declared subset has complete AI image reading and discrepancy review, not human/expert collation. Please report a passage ID, printed page, witness URL, current/proposed readings and visible source evidence through Issues. Separate OCR, reader normalization, visible print and editorial conjecture. Public-domain historical text remains unrestricted; original modern contributions keep their stated rights. Detailed private tooling is not part of this public dataset.

@@ -1,9 +1,9 @@
-James Legge, The Yî King (1882) — hexagram-text subset, v0.1.1
-64 judgments + 384 line passages + 2 additional paragraphs; NOT the whole book.
-OCR-assisted initial transcription; targeted AI scan checks; not fully image-proofread or independently human-collated.
-Historical text: public domain. Original metadata: CC BY 4.0, poplolioi11 / 一卦 yigua.art.
-Reader layer below. Source OCR, page segments and corrections: legge-1882.json / legge-1882-provenance.json.
-Modern headings are navigation metadata, not quotations.
+Legge's Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition — v0.2.0
+64 judgments +384 line passages +2 additional paragraphs; NOT the whole book.
+AI image collation, not independent human double collation, expert review or peer review. A complete review record does not establish a measured accuracy rate or a diplomatic edition.
+Prepared by 曲宸宇（Chu, Chen-Yu；GitHub：poplolioi11）. Historical translation: public domain; original modern editorial material only: CC BY4.0.
+Version DOI: https://doi.org/10.5281/zenodo.23723692 (reserved at preparation).
+Reader typography is normalized; source OCR and image-collation notes are separate.
 
 HEXAGRAM 1: Khien
 
@@ -606,6 +606,7 @@ The second line, divided, shows one who is firm as a rock. (He sees a thing) wit
 Printed pages: 91
 https://archive.org/details/sacredbooksofchi16conf/page/n124/mode/1up
 The third line, divided, shows one looking up (for favours), while he indulges the feeling of pleasure and satisfaction. If he would understand!—If he be late in doing so, there will indeed be occasion for repentance.
+Editorial note: The long dash is visibly interrupted; one damaged long type versus multiple short types cannot be established from this scan. Retain existing em dash; no conjectural duplication.
 
 [legge-16-line-4] Line 4 · Nine, undivided
 Printed pages: 91, 92
@@ -758,6 +759,7 @@ The second line, divided, shows one peeping out from a door. It would be advanta
 Printed pages: 100
 https://archive.org/details/sacredbooksofchi16conf/page/n133/mode/1up
 The third line, divided, shows one looking at (the course of) his own life, to advance or recede (accordingly).
+Editorial note: Small raised mark between own and life has no secure character/punctuation identity. Retain own life; mark temporarily omitted in reader, explicitly documented here.
 
 [legge-20-line-4] Line 4 · Six, divided
 Printed pages: 100
@@ -1855,6 +1857,7 @@ The second line, divided, shows its subject making his changes after some time h
 Printed pages: 168
 https://archive.org/details/sacredbooksofchi16conf/page/n201/mode/1up
 The third line, undivided, shows that action taken by its subject will be evil. Though he be firm and correct, his position is perilous. If the change (he contemplates) have been three times fully discussed, he will be believed in.
+Editorial note: Full stop after evil is clear; a separate raised mark to its right is indeterminate. Retain evil. Though; no added colon or quote.
 
 [legge-49-line-4] Line 4 · Nine, undivided
 Printed pages: 168
@@ -2366,7 +2369,8 @@ The fifth line, divided, (suggests the idea) of dense clouds, but no rain, comin
 Printed pages: 203
 https://archive.org/details/sacredbooksofchi16conf/page/n236/mode/1up
 The sixth line, divided, shows its subject not meeting the exigency of his situation), and exceeding (his proper course). (It suggests the idea of) a bird flying far aloft. There will be evil. The case is what is called one of calamity and self-produced injury.
-Editorial note: Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains the lexical hyphen in self-produced.
+Editorial note: Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains self-produced as an editorial preservation decision; lexical versus line-break status remains unresolved.
+Editorial note: self- is printed at a line ending before produced; the scan alone cannot establish lexical versus line-break hyphen status. Retain self-produced as an explicit editorial preservation decision.
 
 HEXAGRAM 63: Ki Zi
 

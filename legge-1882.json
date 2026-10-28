@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "id": "legge-1882-hexagram-texts-v0.1.1",
-    "version": "0.1.1",
-    "date": "2026-10-23",
-    "title": "James Legge, The Yî King (1882): 64 judgments, 384 line passages and two additional paragraphs",
-    "maintainer": "poplolioi11 / 一卦 yigua.art",
+    "id": "legge-1882-hexagram-texts-v0.2.0",
+    "version": "0.2.0",
+    "date": "2026-10-28",
+    "title": "Legge's Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition",
+    "maintainer": "曲宸宇（Chu, Chen-Yu；GitHub：poplolioi11）",
     "site": "https://yigua.art",
     "translator": "James Legge",
     "publication": {
@@ -42,12 +42,12 @@
       ]
     },
     "quality": {
-      "status": "ocr-assisted-initial-transcription",
+      "status": "ai-image-collated-reader",
       "diplomatic": false,
-      "allPagesImageReviewed": false,
+      "allPagesImageReviewed": true,
       "independentHumanCollation": false,
-      "judgmentReader": "Existing 64 reader strings preserved byte-for-byte; see legge-source-audit.json (2026-10-09). Their original ingestion is unrecorded. This import supplies a separate OCR layer, not a retroactive source-ingestion claim.",
-      "lineReader": "All 386 numbered passages structurally extracted from this witness OCR and read by AI; targeted scan inspection and corrections, not a complete visual proofreading.",
+      "judgmentReader": "The same 64 historical reader strings are retained and now independently image-compared in the 2026-10-28 review. Their original ingestion path remains unrecorded; the new review does not invent it.",
+      "lineReader": "All 384 lines and both additional paragraphs independently read against the selected large-print body on all 154 source pages, followed by full comparison and explicit adjudication; not human/expert collation.",
       "targetedScanPages": [
         58,
         61,
@@ -80,18 +80,25 @@
         210
       ],
       "targetedScanScope": "Images were opened to inspect selected phrases, extraction boundaries or continuation. Listing a page does not assert every glyph on that page was checked.",
-      "knownUncertainty": "No deliberately unresolved illegible word has been guessed. Residual OCR and typography errors may remain outside targeted checks; absence of an uncertainty marker is not a certainty claim."
+      "knownUncertainty": "Five grouped typography/character-identity details remain documented in legge-1882-image-collation.json. Reader approximations are not diplomatic reproductions. Residual errors may remain.",
+      "imageCollation": {
+        "date": "2026-10-28",
+        "sourceImages": 154,
+        "passages": 450,
+        "report": "legge-1882-image-collation.json",
+        "scope": "Selected large-print texts only, not every text layer on the page."
+      }
     },
     "layers": {
       "sourceText": "Selected upstream OCR tokens joined with spaces within OCR lines and newlines between lines/segments; numbering/headings/notes excluded. Not diplomatic transcription, not complete OCR XML; retains upstream OCR misreadings. sourceSegments records printed-page boundaries.",
-      "reader": "Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z.",
+      "reader": "Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z. In version 0.2.0 all 450 reader strings are retained after independent image comparison; the original 3-shaped Roman letter is represented by declared Z reading/search transliteration, not an exact Unicode glyph identity.",
       "heading": "Modern site-authored navigation labels derived from line position/polarity; not verbatim Legge headings.",
       "name": "Simplified Legge romanization only; English navigation glosses elsewhere in the site are modern metadata, not Legge chapter titles."
     },
     "rights": {
       "historicalText": "Public domain historical English translation (1882); no CC condition is imposed on the historical text.",
       "archiveStatus": "Internet Archive item copyright-evidence states NOT_IN_COPYRIGHT (US); this is source evidence, not a universal jurisdictional legal guarantee.",
-      "originalMetadata": "Original modern metadata, documentation and arrangement: CC BY 4.0, attribution poplolioi11 / 一卦 yigua.art; applies only where new copyright exists.",
+      "originalMetadata": "Copyrightable original modern metadata, documentation and arrangement: CC BY 4.0, Chu, Chen-Yu / 曲宸宇 (GitHub poplolioi11); historical public-domain text remains unrestricted.",
       "metadataLicense": "https://creativecommons.org/licenses/by/4.0/",
       "images": "Linked, not redistributed in this data package. Repository/institution image terms remain distinct.",
       "wikisource": "Not a source of the exported text. Wikisource user-contributed editing/arrangement is not relicensed here."
@@ -99,9 +106,16 @@
     "aiUse": {
       "assistant": "OpenAI Codex",
       "model": "Underlying model identifier not exposed in this task; no guessed model version.",
-      "work": "Source research, deterministic OCR segmentation/format conversion, targeted visual inspection and editorial documentation.",
+      "work": "Prior OCR extraction plus 2026-10-28 complete scoped independent AI image reading, full comparison, high-risk image adjudication and deterministic export.",
       "ocr": "Existing Internet Archive OCR; engine/version not established by this import.",
-      "humanReview": "No independent human collation claimed."
+      "humanReview": "No independent human collation, expert review or peer review.",
+      "reviewModels": {
+        "gemini": "Gemini/Antigravity actual reported model gemini-3.8-flash-high for pp57–72.",
+        "nativeAgents": "Fresh Codex sub-agents; requested gpt-6.1-sol ultra for pp73–104 and121–210, requested gpt-6-astra ultra for pp105–120 and critical adjudication. Native execution telemetry did not independently expose exact model identity/usage.",
+        "humanCollation": false,
+        "expertReview": false,
+        "privateRecords": "Detailed prompts, workers, processing code and full internal review logs are retained privately, not included in the public package."
+      }
     },
     "corrections": [
       {
@@ -530,7 +544,7 @@
       },
       {
         "id": "legge-62-line-6",
-        "note": "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains the lexical hyphen in self-produced.",
+        "note": "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains self-produced as an editorial preservation decision; lexical versus line-break status remains unresolved.",
         "page": 203
       },
       {
@@ -547,26 +561,37 @@
         "JSON parse",
         "450 unique IDs and fixed counts",
         "page URLs and lower-to-upper line order",
-        "64 historical judgment strings unchanged",
         "TXT reading-text round trip",
         "TEI secure parse and full reading/OCR/source-link round trip",
-        "TEI P5 4.12.0 Relax NG"
+        "TEI P5 4.12.0 Relax NG",
+        "450 reader strings unchanged from published v0.1.1",
+        "154 scoped source images and450 passage coverage",
+        "full discrepancy dispositions and high-risk review record"
       ],
       "notPerformed": [
         "independent human collation",
-        "full-image proofreading",
         "Schematron",
         "custom ODD",
-        "complete textual-variant apparatus"
+        "complete textual-variant apparatus",
+        "whole-book image collation outside the declared subset"
       ]
     },
     "publicationIdentifiers": {
-      "versionDoi": "10.5281/zenodo.23585522",
-      "versionDoiUrl": "https://doi.org/10.5281/zenodo.23585522",
-      "doiStateAtPreparation": "reserved; not yet published or registered at package preparation",
+      "versionDoi": "10.5281/zenodo.23723692",
+      "versionDoiUrl": "https://doi.org/10.5281/zenodo.23723692",
+      "conceptDoi": "10.5281/zenodo.23585521",
+      "conceptDoiUrl": "https://doi.org/10.5281/zenodo.23585521",
+      "doiStateAtPreparation": "reserved; publication and registration must be checked on the public record",
       "repository": "https://github.com/poplolioi11/yigua-legge-1882",
-      "releaseVersion": "0.1.1",
-      "statusNote": "Preparation-state metadata is historical. Check the public GitHub release and Zenodo record for current publication state; no concept DOI is asserted."
+      "releaseVersion": "0.2.0",
+      "previousVersionDoi": "10.5281/zenodo.23585522"
+    },
+    "imageCollationReport": "legge-1882-image-collation.json",
+    "institutionalCatalogLink": {
+      "url": "https://archive.org/details/sacredbooksofchi16conf",
+      "observed": "2026-10-28",
+      "linkedProjectDoi": "10.5281/zenodo.23585522",
+      "scope": "The Notes field links the preceding release as an informational resource, expressly without endorsement. This is not a new license grant or textual validation."
     }
   },
   "readings": [
@@ -591,7 +616,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 57,
@@ -617,7 +642,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "ia-ocr-reader",
-        "reviewStatus": "ocr-initial-transcription",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 58,
@@ -645,7 +670,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 57,
@@ -671,7 +696,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 57,
@@ -697,7 +722,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 57,
@@ -723,7 +748,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 57,
@@ -749,7 +774,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 57,
@@ -775,7 +800,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 58,
@@ -809,7 +834,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 59,
@@ -839,7 +864,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "ia-ocr-reader",
-        "reviewStatus": "ocr-initial-transcription",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 61,
@@ -867,7 +892,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 60,
@@ -893,7 +918,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 60,
@@ -919,7 +944,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 60,
@@ -945,7 +970,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 60,
@@ -971,7 +996,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 60,
@@ -997,7 +1022,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 61,
@@ -1029,7 +1054,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 62,
@@ -1056,7 +1081,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 62,
@@ -1082,7 +1107,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 62,
@@ -1108,7 +1133,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 62,
@@ -1134,7 +1159,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 63,
@@ -1160,7 +1185,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 63,
@@ -1186,7 +1211,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 63,
@@ -1220,7 +1245,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 64,
@@ -1251,7 +1276,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 65,
@@ -1277,7 +1302,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 65,
@@ -1305,7 +1330,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 65,
@@ -1331,7 +1356,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 65,
@@ -1357,7 +1382,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 65,
@@ -1385,7 +1410,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 65,
@@ -1421,7 +1446,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 67,
@@ -1448,7 +1473,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 67,
@@ -1474,7 +1499,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 67,
@@ -1500,7 +1525,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 67,
@@ -1526,7 +1551,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 67,
@@ -1552,7 +1577,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 67,
@@ -1580,7 +1605,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 67,
@@ -1616,7 +1641,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 69,
@@ -1643,7 +1668,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 69,
@@ -1669,7 +1694,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 69,
@@ -1697,7 +1722,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 69,
@@ -1727,7 +1752,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 70,
@@ -1753,7 +1778,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 70,
@@ -1779,7 +1804,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 70,
@@ -1813,7 +1838,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 71,
@@ -1844,7 +1869,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 72,
@@ -1870,7 +1895,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 72,
@@ -1896,7 +1921,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 72,
@@ -1922,7 +1947,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 72,
@@ -1948,7 +1973,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 72,
@@ -1974,7 +1999,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 72,
@@ -2008,7 +2033,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 73,
@@ -2039,7 +2064,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 74,
@@ -2065,7 +2090,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 74,
@@ -2091,7 +2116,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 74,
@@ -2119,7 +2144,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 74,
@@ -2149,7 +2174,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 75,
@@ -2175,7 +2200,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 75,
@@ -2207,7 +2232,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 76,
@@ -2234,7 +2259,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 76,
@@ -2260,7 +2285,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 76,
@@ -2286,7 +2311,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 77,
@@ -2312,7 +2337,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 77,
@@ -2338,7 +2363,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 77,
@@ -2364,7 +2389,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 77,
@@ -2396,7 +2421,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 78,
@@ -2423,7 +2448,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 79,
@@ -2449,7 +2474,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 79,
@@ -2475,7 +2500,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 79,
@@ -2501,7 +2526,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 79,
@@ -2527,7 +2552,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 79,
@@ -2555,7 +2580,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 79,
@@ -2591,7 +2616,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 81,
@@ -2618,7 +2643,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 81,
@@ -2644,7 +2669,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 81,
@@ -2670,7 +2695,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 81,
@@ -2698,7 +2723,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 81,
@@ -2728,7 +2753,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 82,
@@ -2754,7 +2779,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 82,
@@ -2788,7 +2813,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 83,
@@ -2819,7 +2844,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 84,
@@ -2845,7 +2870,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 84,
@@ -2871,7 +2896,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 84,
@@ -2897,7 +2922,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 84,
@@ -2925,7 +2950,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 84,
@@ -2955,7 +2980,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 85,
@@ -2987,7 +3012,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 86,
@@ -3014,7 +3039,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 86,
@@ -3040,7 +3065,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 86,
@@ -3066,7 +3091,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 86,
@@ -3092,7 +3117,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 86,
@@ -3118,7 +3143,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 86,
@@ -3146,7 +3171,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 86,
@@ -3182,7 +3207,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 88,
@@ -3209,7 +3234,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 88,
@@ -3235,7 +3260,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 88,
@@ -3261,7 +3286,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 88,
@@ -3287,7 +3312,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 88,
@@ -3313,7 +3338,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 88,
@@ -3339,7 +3364,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 88,
@@ -3371,7 +3396,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 89,
@@ -3400,7 +3425,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 89,
@@ -3430,7 +3455,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 90,
@@ -3456,7 +3481,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 90,
@@ -3482,7 +3507,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 90,
@@ -3508,7 +3533,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 90,
@@ -3534,7 +3559,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 90,
@@ -3566,7 +3591,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 91,
@@ -3593,7 +3618,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 91,
@@ -3619,7 +3644,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 91,
@@ -3645,14 +3670,16 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 91,
               "text": "The third line, divided, shows one looking up\n(for favours), while he indulges the feeling of plea-\nsure and satisfaction. If he would understand! —\nIf he be late in doing so, there will indeed be occa-\nsion for repentance."
             }
           ],
-          "editorialNotes": []
+          "editorialNotes": [
+            "The long dash is visibly interrupted; one damaged long type versus multiple short types cannot be established from this scan. Retain existing em dash; no conjectural duplication."
+          ]
         },
         {
           "id": "legge-16-line-4",
@@ -3673,7 +3700,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 91,
@@ -3703,7 +3730,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 92,
@@ -3729,7 +3756,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 92,
@@ -3761,7 +3788,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 93,
@@ -3788,7 +3815,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 93,
@@ -3814,7 +3841,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 93,
@@ -3840,7 +3867,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 93,
@@ -3866,7 +3893,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 93,
@@ -3892,7 +3919,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 94,
@@ -3918,7 +3945,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 94,
@@ -3950,7 +3977,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 95,
@@ -3977,7 +4004,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 95,
@@ -4003,7 +4030,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 95,
@@ -4029,7 +4056,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 95,
@@ -4057,7 +4084,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 95,
@@ -4087,7 +4114,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 96,
@@ -4113,7 +4140,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 96,
@@ -4145,7 +4172,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 97,
@@ -4174,7 +4201,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 97,
@@ -4204,7 +4231,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 98,
@@ -4230,7 +4257,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 98,
@@ -4256,7 +4283,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 98,
@@ -4282,7 +4309,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 98,
@@ -4308,7 +4335,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 98,
@@ -4342,7 +4369,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 99,
@@ -4373,7 +4400,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 100,
@@ -4399,7 +4426,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 100,
@@ -4425,14 +4452,16 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 100,
               "text": "The third line, divided, shows one looking at\n(the course of) his own- life, to advance or recede\n(accordingly)."
             }
           ],
-          "editorialNotes": []
+          "editorialNotes": [
+            "Small raised mark between own and life has no secure character/punctuation identity. Retain own life; mark temporarily omitted in reader, explicitly documented here."
+          ]
         },
         {
           "id": "legge-20-line-4",
@@ -4451,7 +4480,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 100,
@@ -4477,7 +4506,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 100,
@@ -4503,7 +4532,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 100,
@@ -4535,7 +4564,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 101,
@@ -4562,7 +4591,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 101,
@@ -4588,7 +4617,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 101,
@@ -4614,7 +4643,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 102,
@@ -4640,7 +4669,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 102,
@@ -4666,7 +4695,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 102,
@@ -4692,7 +4721,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 102,
@@ -4724,7 +4753,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 103,
@@ -4751,7 +4780,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 104,
@@ -4777,7 +4806,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 104,
@@ -4803,7 +4832,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 104,
@@ -4829,7 +4858,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 104,
@@ -4855,7 +4884,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 104,
@@ -4881,7 +4910,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 104,
@@ -4913,7 +4942,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 105,
@@ -4940,7 +4969,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 106,
@@ -4966,7 +4995,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 106,
@@ -4992,7 +5021,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 106,
@@ -5018,7 +5047,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 106,
@@ -5044,7 +5073,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 106,
@@ -5070,7 +5099,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 106,
@@ -5104,7 +5133,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 107,
@@ -5135,7 +5164,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 108,
@@ -5161,7 +5190,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 108,
@@ -5187,7 +5216,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 108,
@@ -5213,7 +5242,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 108,
@@ -5239,7 +5268,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 108,
@@ -5265,7 +5294,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 108,
@@ -5299,7 +5328,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 109,
@@ -5330,7 +5359,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 110,
@@ -5356,7 +5385,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 110,
@@ -5384,7 +5413,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 110,
@@ -5414,7 +5443,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 111,
@@ -5440,7 +5469,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 111,
@@ -5466,7 +5495,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 111,
@@ -5498,7 +5527,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 112,
@@ -5525,7 +5554,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 112,
@@ -5551,7 +5580,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 112,
@@ -5579,7 +5608,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 112,
@@ -5609,7 +5638,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 113,
@@ -5635,7 +5664,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 113,
@@ -5661,7 +5690,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 113,
@@ -5693,7 +5722,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 114,
@@ -5720,7 +5749,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 114,
@@ -5746,7 +5775,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 114,
@@ -5772,7 +5801,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 114,
@@ -5798,7 +5827,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 115,
@@ -5824,7 +5853,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 115,
@@ -5850,7 +5879,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 115,
@@ -5882,7 +5911,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 116,
@@ -5909,7 +5938,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 116,
@@ -5937,7 +5966,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 116,
@@ -5967,7 +5996,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 117,
@@ -5993,7 +6022,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 117,
@@ -6019,7 +6048,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 117,
@@ -6045,7 +6074,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 117,
@@ -6077,7 +6106,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 118,
@@ -6104,7 +6133,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 118,
@@ -6132,7 +6161,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 118,
@@ -6162,7 +6191,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 119,
@@ -6188,7 +6217,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 119,
@@ -6214,7 +6243,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 119,
@@ -6240,7 +6269,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 119,
@@ -6274,7 +6303,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 120,
@@ -6305,7 +6334,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 121,
@@ -6331,7 +6360,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 121,
@@ -6357,7 +6386,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 121,
@@ -6383,7 +6412,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 121,
@@ -6409,7 +6438,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 121,
@@ -6435,7 +6464,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 122,
@@ -6467,7 +6496,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 123,
@@ -6494,7 +6523,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 123,
@@ -6520,7 +6549,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 123,
@@ -6550,7 +6579,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 123,
@@ -6580,7 +6609,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 123,
@@ -6606,7 +6635,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 123,
@@ -6632,7 +6661,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 124,
@@ -6664,7 +6693,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 125,
@@ -6693,7 +6722,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 125,
@@ -6723,7 +6752,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 126,
@@ -6749,7 +6778,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 126,
@@ -6775,7 +6804,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 126,
@@ -6801,7 +6830,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 126,
@@ -6827,7 +6856,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 126,
@@ -6859,7 +6888,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 127,
@@ -6886,7 +6915,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 127,
@@ -6912,7 +6941,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 128,
@@ -6938,7 +6967,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 128,
@@ -6964,7 +6993,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 128,
@@ -6990,7 +7019,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 128,
@@ -7016,7 +7045,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 128,
@@ -7048,7 +7077,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 129,
@@ -7075,7 +7104,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 130,
@@ -7101,7 +7130,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 130,
@@ -7127,7 +7156,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 130,
@@ -7153,7 +7182,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 130,
@@ -7179,7 +7208,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 130,
@@ -7205,7 +7234,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 130,
@@ -7237,7 +7266,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 131,
@@ -7264,7 +7293,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 132,
@@ -7290,7 +7319,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 132,
@@ -7316,7 +7345,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 132,
@@ -7342,7 +7371,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 132,
@@ -7368,7 +7397,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 132,
@@ -7396,7 +7425,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 132,
@@ -7434,7 +7463,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 134,
@@ -7465,7 +7494,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 135,
@@ -7491,7 +7520,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 135,
@@ -7517,7 +7546,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 135,
@@ -7543,7 +7572,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 135,
@@ -7569,7 +7598,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 135,
@@ -7595,7 +7624,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 135,
@@ -7629,7 +7658,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 136,
@@ -7664,7 +7693,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 137,
@@ -7690,7 +7719,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 137,
@@ -7716,7 +7745,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 137,
@@ -7744,7 +7773,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 137,
@@ -7774,7 +7803,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 138,
@@ -7800,7 +7829,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 138,
@@ -7832,7 +7861,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 139,
@@ -7859,7 +7888,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 139,
@@ -7885,7 +7914,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 139,
@@ -7911,7 +7940,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 139,
@@ -7939,7 +7968,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 139,
@@ -7969,7 +7998,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 140,
@@ -7995,7 +8024,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 140,
@@ -8029,7 +8058,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 141,
@@ -8060,7 +8089,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 142,
@@ -8086,7 +8115,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 142,
@@ -8112,7 +8141,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 142,
@@ -8138,7 +8167,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 142,
@@ -8164,7 +8193,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 142,
@@ -8192,7 +8221,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 142,
@@ -8228,7 +8257,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 144,
@@ -8255,7 +8284,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 144,
@@ -8281,7 +8310,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 145,
@@ -8307,7 +8336,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 145,
@@ -8333,7 +8362,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 145,
@@ -8359,7 +8388,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 145,
@@ -8385,7 +8414,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 145,
@@ -8419,7 +8448,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 146,
@@ -8450,7 +8479,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 147,
@@ -8476,7 +8505,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 147,
@@ -8502,7 +8531,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 147,
@@ -8528,7 +8557,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 147,
@@ -8554,7 +8583,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 147,
@@ -8580,7 +8609,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 148,
@@ -8612,7 +8641,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 149,
@@ -8641,7 +8670,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 149,
@@ -8671,7 +8700,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 150,
@@ -8697,7 +8726,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 150,
@@ -8723,7 +8752,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 150,
@@ -8749,7 +8778,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 150,
@@ -8775,7 +8804,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 150,
@@ -8809,7 +8838,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 151,
@@ -8840,7 +8869,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 152,
@@ -8866,7 +8895,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 152,
@@ -8892,7 +8921,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 152,
@@ -8918,7 +8947,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 153,
@@ -8944,7 +8973,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 153,
@@ -8970,7 +8999,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 153,
@@ -9002,7 +9031,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 154,
@@ -9029,7 +9058,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 155,
@@ -9055,7 +9084,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 155,
@@ -9081,7 +9110,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 155,
@@ -9107,7 +9136,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 155,
@@ -9133,7 +9162,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 155,
@@ -9159,7 +9188,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 155,
@@ -9193,7 +9222,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 156,
@@ -9226,7 +9255,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 157,
@@ -9256,7 +9285,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 158,
@@ -9282,7 +9311,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 158,
@@ -9308,7 +9337,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 158,
@@ -9334,7 +9363,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 158,
@@ -9362,7 +9391,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 158,
@@ -9396,7 +9425,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 159,
@@ -9427,7 +9456,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 160,
@@ -9453,7 +9482,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 160,
@@ -9479,7 +9508,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 160,
@@ -9505,7 +9534,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 160,
@@ -9531,7 +9560,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 160,
@@ -9557,7 +9586,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 160,
@@ -9591,7 +9620,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 161,
@@ -9622,7 +9651,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 162,
@@ -9648,7 +9677,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 162,
@@ -9674,7 +9703,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 162,
@@ -9700,7 +9729,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 162,
@@ -9726,7 +9755,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 163,
@@ -9752,7 +9781,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 163,
@@ -9786,7 +9815,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 164,
@@ -9817,7 +9846,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 165,
@@ -9843,7 +9872,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 165,
@@ -9869,7 +9898,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 165,
@@ -9895,7 +9924,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 166,
@@ -9921,7 +9950,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 166,
@@ -9947,7 +9976,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 166,
@@ -9979,7 +10008,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 167,
@@ -10006,7 +10035,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 167,
@@ -10032,7 +10061,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 168,
@@ -10058,14 +10087,16 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 168,
               "text": "The third line, undivided, shows that action\ntaken by its subject will be evil. Though he be\nfirm and correct, his position is perilous. If the\nchange (he contemplates) have been three times\nfully discussed, he will be believed in."
             }
           ],
-          "editorialNotes": []
+          "editorialNotes": [
+            "Full stop after evil is clear; a separate raised mark to its right is indeterminate. Retain evil. Though; no added colon or quote."
+          ]
         },
         {
           "id": "legge-49-line-4",
@@ -10084,7 +10115,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 168,
@@ -10110,7 +10141,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 168,
@@ -10136,7 +10167,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 168,
@@ -10168,7 +10199,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 169,
@@ -10197,7 +10228,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 169,
@@ -10227,7 +10258,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 170,
@@ -10253,7 +10284,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 170,
@@ -10279,7 +10310,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 170,
@@ -10305,7 +10336,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 171,
@@ -10331,7 +10362,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 171,
@@ -10365,7 +10396,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 172,
@@ -10396,7 +10427,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 173,
@@ -10422,7 +10453,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 173,
@@ -10448,7 +10479,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 173,
@@ -10474,7 +10505,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 174,
@@ -10500,7 +10531,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 174,
@@ -10526,7 +10557,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 174,
@@ -10560,7 +10591,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 175,
@@ -10591,7 +10622,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 176,
@@ -10617,7 +10648,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 176,
@@ -10643,7 +10674,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 176,
@@ -10669,7 +10700,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 176,
@@ -10695,7 +10726,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 176,
@@ -10723,7 +10754,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 176,
@@ -10759,7 +10790,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 178,
@@ -10786,7 +10817,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 178,
@@ -10812,7 +10843,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 179,
@@ -10838,7 +10869,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 179,
@@ -10864,7 +10895,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 179,
@@ -10890,7 +10921,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 179,
@@ -10916,7 +10947,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 179,
@@ -10948,7 +10979,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 180,
@@ -10981,7 +11012,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 181,
@@ -11011,7 +11042,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 182,
@@ -11037,7 +11068,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 182,
@@ -11063,7 +11094,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 182,
@@ -11089,7 +11120,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 182,
@@ -11115,7 +11146,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 182,
@@ -11149,7 +11180,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 183,
@@ -11180,7 +11211,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 185,
@@ -11206,7 +11237,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 185,
@@ -11232,7 +11263,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 185,
@@ -11258,7 +11289,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 185,
@@ -11284,7 +11315,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 185,
@@ -11312,7 +11343,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 185,
@@ -11348,7 +11379,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 187,
@@ -11375,7 +11406,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 187,
@@ -11401,7 +11432,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 188,
@@ -11427,7 +11458,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 188,
@@ -11453,7 +11484,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 188,
@@ -11479,7 +11510,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 188,
@@ -11505,7 +11536,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 188,
@@ -11539,7 +11570,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 189,
@@ -11570,7 +11601,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 190,
@@ -11596,7 +11627,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 190,
@@ -11622,7 +11653,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 190,
@@ -11648,7 +11679,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 190,
@@ -11676,7 +11707,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 190,
@@ -11706,7 +11737,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 191,
@@ -11738,7 +11769,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 192,
@@ -11765,7 +11796,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 193,
@@ -11791,7 +11822,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 193,
@@ -11817,7 +11848,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 193,
@@ -11843,7 +11874,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 193,
@@ -11869,7 +11900,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 193,
@@ -11895,7 +11926,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 193,
@@ -11929,7 +11960,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 194,
@@ -11960,7 +11991,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 195,
@@ -11986,7 +12017,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 195,
@@ -12012,7 +12043,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 195,
@@ -12038,7 +12069,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 195,
@@ -12066,7 +12097,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 195,
@@ -12096,7 +12127,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 196,
@@ -12128,7 +12159,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 197,
@@ -12157,7 +12188,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 197,
@@ -12187,7 +12218,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 198,
@@ -12213,7 +12244,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 198,
@@ -12239,7 +12270,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 198,
@@ -12265,7 +12296,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 198,
@@ -12291,7 +12322,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 198,
@@ -12325,7 +12356,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 199,
@@ -12356,7 +12387,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 200,
@@ -12382,7 +12413,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 200,
@@ -12408,7 +12439,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 200,
@@ -12434,7 +12465,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 200,
@@ -12460,7 +12491,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 200,
@@ -12486,7 +12517,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 200,
@@ -12520,7 +12551,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 201,
@@ -12551,7 +12582,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 202,
@@ -12579,7 +12610,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 202,
@@ -12609,7 +12640,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 203,
@@ -12635,7 +12666,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 203,
@@ -12661,7 +12692,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 203,
@@ -12687,7 +12718,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 203,
@@ -12695,7 +12726,8 @@
             }
           ],
           "editorialNotes": [
-            "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains the lexical hyphen in self-produced."
+            "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains self-produced as an editorial preservation decision; lexical versus line-break status remains unresolved.",
+            "self- is printed at a line ending before produced; the scan alone cannot establish lexical versus line-break hyphen status. Retain self-produced as an explicit editorial preservation decision."
           ]
         }
       ]
@@ -12723,7 +12755,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 204,
@@ -12754,7 +12786,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 205,
@@ -12780,7 +12812,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 205,
@@ -12806,7 +12838,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 205,
@@ -12832,7 +12864,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 206,
@@ -12858,7 +12890,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 206,
@@ -12884,7 +12916,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 206,
@@ -12916,7 +12948,7 @@
         "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
         "sourceDate": "2026-10-23",
         "textOrigin": "existing-judgment-reader",
-        "reviewStatus": "historical-judgment-audit",
+        "reviewStatus": "ai-image-collated",
         "sourceSegments": [
           {
             "page": 207,
@@ -12943,7 +12975,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 208,
@@ -12969,7 +13001,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 208,
@@ -12995,7 +13027,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 208,
@@ -13021,7 +13053,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 208,
@@ -13047,7 +13079,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 208,
@@ -13077,7 +13109,7 @@
           "sourceSha256": "3e9823f65f22f7679277128649fcc4d1ef53ccf97954d8cb3691e57841022f5b",
           "sourceDate": "2026-10-23",
           "textOrigin": "ia-ocr-reader",
-          "reviewStatus": "ocr-initial-transcription",
+          "reviewStatus": "ai-image-collated",
           "sourceSegments": [
             {
               "page": 208,

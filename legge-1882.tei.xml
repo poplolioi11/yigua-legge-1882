@@ -3,7 +3,7 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>James Legge, The Yî King (1882): 64 judgments, 384 line passages and two additional paragraphs</title>
+        <title>Legge's Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition</title>
         <author>Traditional Chinese classic; judgments traditionally attributed to King Wăn, line passages to the duke of Kâu (following Legge’s presentation).</author>
         <respStmt>
           <resp>English translation (1882)</resp>
@@ -11,20 +11,20 @@
         </respStmt>
         <respStmt>
           <resp>Modern data preparation and encoding; AI assistance disclosed in provenance</resp>
-          <name>poplolioi11 / 一卦 yigua.art</name>
+          <name>曲宸宇（Chu, Chen-Yu；GitHub：poplolioi11）</name>
         </respStmt>
       </titleStmt>
       <editionStmt>
-        <edition>Version 0.1.1: OCR-assisted initial transcription of the hexagram-text subset</edition>
+        <edition>Version 0.2.0: complete scoped AI independent image collation; unresolved typography retained; no human/expert collation.</edition>
       </editionStmt>
       <publicationStmt>
         <publisher>一卦 yigua.art</publisher>
-        <date when="2026-10-23">2026-10-23</date>
-        <idno type="DOI">10.5281/zenodo.23585522</idno>
+        <date when="2026-10-28">2026-10-28</date>
+        <idno type="DOI">10.5281/zenodo.23723692</idno>
         <availability>
           <p>Public domain historical English translation (1882); no CC condition is imposed on the historical text.</p>
-          <licence target="https://creativecommons.org/licenses/by/4.0/">Original modern metadata, documentation and arrangement: CC BY 4.0, attribution poplolioi11 / 一卦 yigua.art; applies only where new copyright exists.</licence>
-          <p>DOI 10.5281/zenodo.23585522 was reserved but not yet published or registered at package preparation. This is a historical preparation-state statement; current publication state must be checked on the public record. No concept DOI is asserted.</p>
+          <licence target="https://creativecommons.org/licenses/by/4.0/">Copyrightable original modern metadata, documentation and arrangement: CC BY 4.0, Chu, Chen-Yu / 曲宸宇 (GitHub poplolioi11); historical public-domain text remains unrestricted.</licence>
+          <p>Version DOI 10.5281/zenodo.23723692 was reserved at package preparation; the public record establishes publication/registration. Concept DOI 10.5281/zenodo.23585521; previous fixed version 10.5281/zenodo.23585522 is preserved.</p>
         </availability>
       </publicationStmt>
       <sourceDesc>
@@ -41,22 +41,18 @@
     </fileDesc>
     <encodingDesc>
       <projectDesc>
-        <p>All 386 numbered passages structurally extracted from this witness OCR and read by AI; targeted scan inspection and corrections, not a complete visual proofreading.</p>
-        <p>Existing 64 reader strings preserved byte-for-byte; see legge-source-audit.json (2026-10-09). Their original ingestion is unrecorded. This import supplies a separate OCR layer, not a retroactive source-ingestion claim.</p>
-        <p>Images were opened to inspect selected phrases, extraction boundaries or continuation. Listing a page does not assert every glyph on that page was checked.</p>
-        <p>All source-ocr elements contain selected upstream OCR, not a diplomatic transcript. Reader and OCR layers are distinct. Source metadata and exact corrections are supplied in the companion provenance JSON.</p>
-      </projectDesc>
+        <p>All 384 lines and both additional paragraphs independently read against the selected large-print body on all 154 source pages, followed by full comparison and explicit adjudication; not human/expert collation.</p><p>The same 64 historical reader strings are retained and now independently image-compared in the 2026-10-28 review. Their original ingestion path remains unrecorded; the new review does not invent it.</p><p>Fresh image-only contexts read every scoped page before receiving the initial transcription or OCR. The fixed 450 passages were then fully aligned by program. Discrepancies and explicitly selected high-risk items were referred back to the scans. Shared-model and shared-source bias remain possible.</p><p>AI image collation, not independent human double collation, expert review or peer review. A complete review record does not establish a measured accuracy rate or a diplomatic edition.</p><p>Original OCR remains separate and unchanged. Complete public collation coverage and decisions: legge-1882-image-collation.json.</p></projectDesc>
       <editorialDecl>
         <p>Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z. Modern site-authored navigation labels derived from line position/polarity; not verbatim Legge headings. No Schematron or custom ODD validation; generic TEI all Relax NG plus dataset-specific round-trip checks.</p>
       </editorialDecl>
     </encodingDesc>
     <xenoData>
       <ns1:json xmlns:ns1="https://yigua.art/ns/metadata">{
-  "id": "legge-1882-hexagram-texts-v0.1.1",
-  "version": "0.1.1",
-  "date": "2026-10-23",
-  "title": "James Legge, The Yî King (1882): 64 judgments, 384 line passages and two additional paragraphs",
-  "maintainer": "poplolioi11 / 一卦 yigua.art",
+  "id": "legge-1882-hexagram-texts-v0.2.0",
+  "version": "0.2.0",
+  "date": "2026-10-28",
+  "title": "Legge's Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition",
+  "maintainer": "曲宸宇（Chu, Chen-Yu；GitHub：poplolioi11）",
   "site": "https://yigua.art",
   "translator": "James Legge",
   "publication": {
@@ -94,12 +90,12 @@
     ]
   },
   "quality": {
-    "status": "ocr-assisted-initial-transcription",
+    "status": "ai-image-collated-reader",
     "diplomatic": false,
-    "allPagesImageReviewed": false,
+    "allPagesImageReviewed": true,
     "independentHumanCollation": false,
-    "judgmentReader": "Existing 64 reader strings preserved byte-for-byte; see legge-source-audit.json (2026-10-09). Their original ingestion is unrecorded. This import supplies a separate OCR layer, not a retroactive source-ingestion claim.",
-    "lineReader": "All 386 numbered passages structurally extracted from this witness OCR and read by AI; targeted scan inspection and corrections, not a complete visual proofreading.",
+    "judgmentReader": "The same 64 historical reader strings are retained and now independently image-compared in the 2026-10-28 review. Their original ingestion path remains unrecorded; the new review does not invent it.",
+    "lineReader": "All 384 lines and both additional paragraphs independently read against the selected large-print body on all 154 source pages, followed by full comparison and explicit adjudication; not human/expert collation.",
     "targetedScanPages": [
       58,
       61,
@@ -132,18 +128,25 @@
       210
     ],
     "targetedScanScope": "Images were opened to inspect selected phrases, extraction boundaries or continuation. Listing a page does not assert every glyph on that page was checked.",
-    "knownUncertainty": "No deliberately unresolved illegible word has been guessed. Residual OCR and typography errors may remain outside targeted checks; absence of an uncertainty marker is not a certainty claim."
+    "knownUncertainty": "Five grouped typography/character-identity details remain documented in legge-1882-image-collation.json. Reader approximations are not diplomatic reproductions. Residual errors may remain.",
+    "imageCollation": {
+      "date": "2026-10-28",
+      "sourceImages": 154,
+      "passages": 450,
+      "report": "legge-1882-image-collation.json",
+      "scope": "Selected large-print texts only, not every text layer on the page."
+    }
   },
   "layers": {
     "sourceText": "Selected upstream OCR tokens joined with spaces within OCR lines and newlines between lines/segments; numbering/headings/notes excluded. Not diplomatic transcription, not complete OCR XML; retains upstream OCR misreadings. sourceSegments records printed-page boundaries.",
-    "reader": "Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z.",
+    "reader": "Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z. In version 0.2.0 all 450 reader strings are retained after independent image comparison; the original 3-shaped Roman letter is represented by declared Z reading/search transliteration, not an exact Unicode glyph identity.",
     "heading": "Modern site-authored navigation labels derived from line position/polarity; not verbatim Legge headings.",
     "name": "Simplified Legge romanization only; English navigation glosses elsewhere in the site are modern metadata, not Legge chapter titles."
   },
   "rights": {
     "historicalText": "Public domain historical English translation (1882); no CC condition is imposed on the historical text.",
     "archiveStatus": "Internet Archive item copyright-evidence states NOT_IN_COPYRIGHT (US); this is source evidence, not a universal jurisdictional legal guarantee.",
-    "originalMetadata": "Original modern metadata, documentation and arrangement: CC BY 4.0, attribution poplolioi11 / 一卦 yigua.art; applies only where new copyright exists.",
+    "originalMetadata": "Copyrightable original modern metadata, documentation and arrangement: CC BY 4.0, Chu, Chen-Yu / 曲宸宇 (GitHub poplolioi11); historical public-domain text remains unrestricted.",
     "metadataLicense": "https://creativecommons.org/licenses/by/4.0/",
     "images": "Linked, not redistributed in this data package. Repository/institution image terms remain distinct.",
     "wikisource": "Not a source of the exported text. Wikisource user-contributed editing/arrangement is not relicensed here."
@@ -151,9 +154,16 @@
   "aiUse": {
     "assistant": "OpenAI Codex",
     "model": "Underlying model identifier not exposed in this task; no guessed model version.",
-    "work": "Source research, deterministic OCR segmentation/format conversion, targeted visual inspection and editorial documentation.",
+    "work": "Prior OCR extraction plus 2026-10-28 complete scoped independent AI image reading, full comparison, high-risk image adjudication and deterministic export.",
     "ocr": "Existing Internet Archive OCR; engine/version not established by this import.",
-    "humanReview": "No independent human collation claimed."
+    "humanReview": "No independent human collation, expert review or peer review.",
+    "reviewModels": {
+      "gemini": "Gemini/Antigravity actual reported model gemini-3.8-flash-high for pp57–72.",
+      "nativeAgents": "Fresh Codex sub-agents; requested gpt-6.1-sol ultra for pp73–104 and121–210, requested gpt-6-astra ultra for pp105–120 and critical adjudication. Native execution telemetry did not independently expose exact model identity/usage.",
+      "humanCollation": false,
+      "expertReview": false,
+      "privateRecords": "Detailed prompts, workers, processing code and full internal review logs are retained privately, not included in the public package."
+    }
   },
   "corrections": [
     {
@@ -582,7 +592,7 @@
     },
     {
       "id": "legge-62-line-6",
-      "note": "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains the lexical hyphen in self-produced.",
+      "note": "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains self-produced as an editorial preservation decision; lexical versus line-break status remains unresolved.",
       "page": 203
     },
     {
@@ -599,26 +609,37 @@
       "JSON parse",
       "450 unique IDs and fixed counts",
       "page URLs and lower-to-upper line order",
-      "64 historical judgment strings unchanged",
       "TXT reading-text round trip",
       "TEI secure parse and full reading/OCR/source-link round trip",
-      "TEI P5 4.12.0 Relax NG"
+      "TEI P5 4.12.0 Relax NG",
+      "450 reader strings unchanged from published v0.1.1",
+      "154 scoped source images and450 passage coverage",
+      "full discrepancy dispositions and high-risk review record"
     ],
     "notPerformed": [
       "independent human collation",
-      "full-image proofreading",
       "Schematron",
       "custom ODD",
-      "complete textual-variant apparatus"
+      "complete textual-variant apparatus",
+      "whole-book image collation outside the declared subset"
     ]
   },
   "publicationIdentifiers": {
-    "versionDoi": "10.5281/zenodo.23585522",
-    "versionDoiUrl": "https://doi.org/10.5281/zenodo.23585522",
-    "doiStateAtPreparation": "reserved; not yet published or registered at package preparation",
+    "versionDoi": "10.5281/zenodo.23723692",
+    "versionDoiUrl": "https://doi.org/10.5281/zenodo.23723692",
+    "conceptDoi": "10.5281/zenodo.23585521",
+    "conceptDoiUrl": "https://doi.org/10.5281/zenodo.23585521",
+    "doiStateAtPreparation": "reserved; publication and registration must be checked on the public record",
     "repository": "https://github.com/poplolioi11/yigua-legge-1882",
-    "releaseVersion": "0.1.1",
-    "statusNote": "Preparation-state metadata is historical. Check the public GitHub release and Zenodo record for current publication state; no concept DOI is asserted."
+    "releaseVersion": "0.2.0",
+    "previousVersionDoi": "10.5281/zenodo.23585522"
+  },
+  "imageCollationReport": "legge-1882-image-collation.json",
+  "institutionalCatalogLink": {
+    "url": "https://archive.org/details/sacredbooksofchi16conf",
+    "observed": "2026-10-28",
+    "linkedProjectDoi": "10.5281/zenodo.23585522",
+    "scope": "The Notes field links the preceding release as an informational resource, expressly without endorsement. This is not a new license grant or textual validation."
   }
 }
 </ns1:json>
@@ -626,7 +647,7 @@
     <revisionDesc>
       <change when="2026-10-23">Initial local data preparation (0.1.0); not independently human-collated.</change>
       <change when="2026-10-23">Version 0.1.1: remove two OCR section/chapter-heading segments from the source layer; all 450 reader strings unchanged. No new image collation.</change>
-    </revisionDesc>
+    <change when="2026-10-28">Version0.2.0: all450 scoped passages independently AI image-read and compared; all reader strings retained, with nine discrepancy dispositions and five grouped unresolved typography/encoding details. No independent human/expert review.</change></revisionDesc>
   </teiHeader>
   <text>
     <body>
@@ -1059,8 +1080,7 @@ the goodness of women, which will also be fortunate.
 the burden of) his family.</ab>
           <p>
             <ref target="https://archive.org/details/sacredbooksofchi16conf/page/n98/mode/1up" type="printed-page">65</ref>
-            <note type="editorial">Printed p. 65 has an unmatched opening parenthesis before even; retained without conjectural repair.</note>
-          </p>
+            <note type="editorial">Printed p. 65 has an unmatched opening parenthesis before even; retained without conjectural repair.</note></p>
         </div>
         <div type="line" n="3" xml:id="legge-04-line-3">
           <head>Line 3 · Six, divided</head>
@@ -2407,7 +2427,7 @@ If he be late in doing so, there will indeed be occa-
 sion for repentance.</ab>
           <p>
             <ref target="https://archive.org/details/sacredbooksofchi16conf/page/n124/mode/1up" type="printed-page">91</ref>
-          </p>
+          <note type="editorial">The long dash is visibly interrupted; one damaged long type versus multiple short types cannot be established from this scan. Retain existing em dash; no conjectural duplication.</note></p>
         </div>
         <div type="line" n="4" xml:id="legge-16-line-4">
           <head>Line 4 · Nine, undivided</head>
@@ -2835,7 +2855,7 @@ were (merely) the firm correctness of a female.</ab>
 (accordingly).</ab>
           <p>
             <ref target="https://archive.org/details/sacredbooksofchi16conf/page/n133/mode/1up" type="printed-page">100</ref>
-          </p>
+          <note type="editorial">Small raised mark between own and life has no secure character/punctuation identity. Retain own life; mark temporarily omitted in reader, explicitly documented here.</note></p>
         </div>
         <div type="line" n="4" xml:id="legge-20-line-4">
           <head>Line 4 · Six, divided</head>
@@ -5673,8 +5693,7 @@ continued, and firmly correct, and all occasion for
 repentance will disappear.</ab>
           <p>
             <ref target="https://archive.org/details/sacredbooksofchi16conf/page/n191/mode/1up" type="printed-page">158</ref>
-            <note type="editorial">Reader retains the lexical hyphen in long-continued across the printed line break.</note>
-          </p>
+            <note type="editorial">Reader retains the lexical hyphen in long-continued across the printed line break.</note></p>
         </div>
         <div type="line" n="6" xml:id="legge-45-line-6">
           <head>Line 6 · Six, divided</head>
@@ -6089,7 +6108,7 @@ change (he contemplates) have been three times
 fully discussed, he will be believed in.</ab>
           <p>
             <ref target="https://archive.org/details/sacredbooksofchi16conf/page/n201/mode/1up" type="printed-page">168</ref>
-          </p>
+          <note type="editorial">Full stop after evil is clear; a separate raised mark to its right is indeterminate. Retain evil. Though; no added colon or quote.</note></p>
         </div>
         <div type="line" n="4" xml:id="legge-49-line-4">
           <head>Line 4 · Nine, undivided</head>
@@ -7613,8 +7632,7 @@ case is what is called one of calamity and self-
 produced injury.</ab>
           <p>
             <ref target="https://archive.org/details/sacredbooksofchi16conf/page/n236/mode/1up" type="printed-page">203</ref>
-            <note type="editorial">Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains the lexical hyphen in self-produced.</note>
-          </p>
+            <note type="editorial">Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains self-produced as an editorial preservation decision; lexical versus line-break status remains unresolved.</note><note type="editorial">self- is printed at a line ending before produced; the scan alone cannot establish lexical versus line-break hyphen status. Retain self-produced as an explicit editorial preservation decision.</note></p>
         </div>
       </div>
       <div type="hexagram" n="63" xml:id="hexagram-63">

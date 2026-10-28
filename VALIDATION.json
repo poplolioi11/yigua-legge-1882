@@ -1,81 +1,49 @@
 {
-  "dataset": "legge-1882-hexagram-texts-v0.1.1",
-  "version": "0.1.1",
-  "date": "2026-10-23",
-  "status": "ready-for-review",
-  "publicationStateAtPreparation": {
-    "github": "not yet formally released at package preparation",
-    "zenodo": "version DOI reserved; not yet published or registered at package preparation",
-    "versionDoi": "10.5281/zenodo.23585522",
-    "note": "This is a historical preparation-state statement. Check the public release and record for current state. No concept DOI is asserted."
-  },
+  "status": "passed",
+  "version": "0.2.0",
+  "date": "2026-10-28",
   "counts": {
     "hexagrams": 64,
     "judgments": 64,
     "lines": 384,
     "additionalParagraphs": 2,
     "passages": 450,
-    "sourceOcrSegments": 513,
-    "correctionRecords": 31,
-    "extractionBoundaryRecords": 9,
-    "readerCorrectionRecords": 22,
-    "existingTargetedImagePages": 29
+    "sourceImages": 154
   },
   "readerIdentity": {
-    "baselineVersion": "0.1.0 website snapshot",
-    "candidateVersion": "0.1.1",
-    "comparedPassages": 450,
-    "changedIdsOrReaderStrings": 0,
-    "canonicalRule": "SHA-256 of UTF-8 JSON.stringify of the ordered array of {id,text}, in King Wen order: judgment, lines 1 through 6, then the additional paragraph where present; no trailing newline.",
-    "baselineSha256": "79ef55f8c194b8f0fa8aadc64ffa86dfecd90dd270663c0cde0bbd210d588f33",
-    "candidateSha256": "79ef55f8c194b8f0fa8aadc64ffa86dfecd90dd270663c0cde0bbd210d588f33",
-    "historicalJudgmentAuditSha256": "7949a3faa9fdda9283e5389b3339c503d95f879cec70e6d879ddc0b95e8ca4f5"
+    "unchangedFrom": "0.1.1",
+    "sha256": "79ef55f8c194b8f0fa8aadc64ffa86dfecd90dd270663c0cde0bbd210d588f33"
   },
-  "teiSchema": {
-    "version": "4.12.0",
-    "url": "https://www.tei-c.org/Vault/P5/4.12.0/xml/tei/custom/schema/relaxng/tei_all.rng",
-    "sha256": "b0f115095ead2ccc6933aa3365c6f4a82cba3b2ec7eee7f76bb616d7a63b7e48",
-    "validation": "passed: secure parse, fixed official Relax NG, plus dataset-specific round-trip checks; schema not bundled"
-  },
-  "cffSchema": {
-    "version": "1.2.0",
-    "url": "https://raw.githubusercontent.com/citation-file-format/citation-file-format/1.2.0/schema.json",
-    "sha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b",
-    "validation": "passed: complete official schema with jsonschema 4.26.0 Draft7Validator and FormatChecker; PyYAML 6.0.3 safe_load; schema not bundled",
-    "type": "dataset"
-  },
-  "positiveChecks": [
-    "JSON metadata equals companion provenance and the TEI metadata snapshot",
-    "JSON/TXT/TEI reader, OCR, page segments, IDs, source links and editorial notes round trip",
-    "64 ordered hexagrams, six ordered lines each, two additional paragraphs and 450 unique passage IDs",
-    "384 line polarity headings agree with the existing hexagram data",
-    "64 judgment reader strings and all judgment page mappings agree with the historical source audit",
-    "All 513 source OCR segments occur in the raw OCR token sequence of the mapped witness page",
-    "The two pure chapter-heading segments are excluded from the source layer",
-    "31 public correction records equal the retained correction evidence",
-    "Existing OCR plus 29 targeted-image files match their retained hashes; this establishes bit integrity, not visual accuracy",
-    "Public export manifest includes the historical judgment source-audit attachment"
+  "checks": [
+    "450 passage IDs/order/pages and reading text",
+    "Original OCR and historical source audit unchanged",
+    "154 source-image evidence coverage",
+    "Every normalized discrepancy explicitly adjudicated",
+    "JSON/TXT/TEI full secure round trip",
+    "TEI P5 4.12.0 Relax NG",
+    "CFF1.2.0 complete official schema"
   ],
-  "websiteDataCompatibility": {
-    "suite": "Existing Legge reader/data compatibility checks",
-    "passed": 4,
-    "failed": 0,
-    "scope": "Thin reader remains unchanged; the detailed reading data and public dataset agree, including source boundaries. Website UI and deployment are outside this package validation."
-  },
   "negativeChecks": [
-    "changed word rejected",
-    "dropped line rejected",
-    "swapped hexagrams rejected",
-    "changed source rejected",
-    "duplicate ID rejected",
-    "changed editorial note rejected",
-    "external entity rejected"
+    "changed-word",
+    "dropped-line",
+    "duplicate-id",
+    "changed-source",
+    "swapped-order",
+    "external-entity"
   ],
-  "limits": [
-    "Structural consistency and checksums do not establish textual accuracy.",
-    "No new image collation was performed for version 0.1.1.",
-    "Existing 29-page targeted AI checks do not establish whole-page proofreading.",
-    "No full-image proofreading, independent human second collation, Schematron, custom ODD or complete textual-variant apparatus is claimed.",
-    "Private processing scripts, prompts, images, complete OCR and full assistant records are not distributed; complete source-image replay is not promised."
-  ]
+  "textualReview": "AI independent image collation with unresolved details explicitly retained. Not a measured accuracy rate.",
+  "notPerformed": [
+    "independent human double collation",
+    "expert review",
+    "peer review",
+    "Schematron",
+    "custom ODD",
+    "whole-book collation"
+  ],
+  "schema": {
+    "teiVersion": "4.12.0",
+    "teiSha256": "b0f115095ead2ccc6933aa3365c6f4a82cba3b2ec7eee7f76bb616d7a63b7e48",
+    "cffVersion": "1.2.0",
+    "cffSha256": "0b8d22140da702d766df318dcff3a91af2f39521298dcf36d76315fd99cc169b"
+  }
 }

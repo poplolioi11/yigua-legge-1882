@@ -1,0 +1,5159 @@
+{
+  "id": "legge-1882-image-collation-20261028",
+  "date": "2026-10-28",
+  "version": "0.2.0",
+  "status": "completed AI independent image reading and discrepancy adjudication; unresolved details retained",
+  "scope": {
+    "printedPages": [
+      57,
+      210
+    ],
+    "sourceImages": 154,
+    "judgments": 64,
+    "linePassages": 384,
+    "additionalParagraphs": 2,
+    "passages": 450,
+    "wholeBook": false,
+    "included": "Selected large-print hexagram texts above the commentary rule; all continuation pages.",
+    "excluded": [
+      "headers",
+      "diagrams",
+      "chapter titles",
+      "small-print commentary",
+      "introduction",
+      "appendices",
+      "index"
+    ]
+  },
+  "baseline": {
+    "version": "0.1.1",
+    "doi": "10.5281/zenodo.23585522",
+    "jsonSha256": "77b57bbf10659e09cf464751c233addbbe85618b2e5d1c92e79680e9b626de73"
+  },
+  "methodSummary": "Fresh image-only contexts read every scoped page before receiving the initial transcription or OCR. The fixed 450 passages were then fully aligned by program. Discrepancies and explicitly selected high-risk items were referred back to the scans. Shared-model and shared-source bias remain possible.",
+  "aiUse": {
+    "gemini": "Gemini/Antigravity actual reported model gemini-3.8-flash-high for pp57–72.",
+    "nativeAgents": "Fresh Codex sub-agents; requested gpt-6.1-sol ultra for pp73–104 and121–210, requested gpt-6-astra ultra for pp105–120 and critical adjudication. Native execution telemetry did not independently expose exact model identity/usage.",
+    "humanCollation": false,
+    "expertReview": false,
+    "privateRecords": "Detailed prompts, workers, processing code and full internal review logs are retained privately, not included in the public package."
+  },
+  "coverage": [
+    {
+      "page": 57,
+      "imageSha256": "5e9cb5a33df1bb00646b7729fcec9afdb91125805a9df8209a39eec6a024bc47",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n90/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 58,
+      "imageSha256": "d57d89d851379380247203f46ed2087d41df389e6814b71cfe082acf00c8fc2d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n91/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 59,
+      "imageSha256": "11149b3e7998cbd334d1a6d1f192131e14cc3fa56b3001ae3a94429305ea75e3",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n92/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 60,
+      "imageSha256": "f0450b63b08945a67cbdca31b4c55861bdcb241d99370e37e5d338f8a48ca54e",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n93/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 61,
+      "imageSha256": "1b52194731dec277386543311dafaf3502d2669a5342db41e4cc8b42f1a65656",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n94/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 62,
+      "imageSha256": "ed64599d3c4f32424a89ec5fdd01094492d4997540a2be4e2b55f823db19930e",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n95/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 63,
+      "imageSha256": "47e234c3c7efd48576770d3f803af00b78107468f4550385ad882c9fe4c261cd",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n96/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 64,
+      "imageSha256": "f64c8b537b72e0e30f3ebf446fa7d5497551f9f467530010d9d71b069f30a2bf",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n97/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 65,
+      "imageSha256": "392cef58cf4d6fd99b09fb7ffe3b4ed2d2eb91f26fcd2eed792cd11883716ae0",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n98/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 66,
+      "imageSha256": "1d1b0d0032888923863a700d023ada294afef6a4316d793dfe457ff302de4aeb",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n99/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 67,
+      "imageSha256": "eb8f8dd13784615b887cb39dbf907ff8f2883be788d04aebcb69818dddc3a6c2",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n100/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 68,
+      "imageSha256": "8a0525076d16a549fb964f54c53ddcdbe49b37faf7c839dc293fafd64aecbca9",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n101/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 69,
+      "imageSha256": "d179bcee2406110edbe55556a3e24b23ac034ab89c92f61fbf27abca163934cc",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n102/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 70,
+      "imageSha256": "c9a1f1bd409776b2179e140a0453395a1b47f5c557bfcf9c87de33084be1699e",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n103/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 71,
+      "imageSha256": "2ca9f47a98ff169ff4722ccae89045c82cbf11acf5a0b1a713f182a989cc2f23",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n104/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 72,
+      "imageSha256": "de5e88e88d86894c47a9141e6a5dcf7258919f13bca7a886f04802f5852d193d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n105/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 73,
+      "imageSha256": "2f5bb635f0fcdd2097e68d4807670e1f408a3b62870a2ed827123a72a9f361f0",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n106/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 74,
+      "imageSha256": "d931e17056261c3e8807b3e8784bb63e717db823de992b90103ebd75c2424778",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n107/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 75,
+      "imageSha256": "c7187eb0bfd8e00d42df04bc60214f14451765e2b566be7db31582064f5f5c4f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n108/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 76,
+      "imageSha256": "6c008f02b2746a7444adc915184778e512e96f3460b3f68d0a526eb97a2b8ce4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n109/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 77,
+      "imageSha256": "2d4242728bcf4b9b67f87a8b74c2831be5510c694245d3d40523de590d520db5",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n110/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 78,
+      "imageSha256": "9803f5362c02a3c92f7bdc1fbcb2bdba11801819d3e8c026a31e33e56cb60728",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n111/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 79,
+      "imageSha256": "b129c4f385906a74b256667fd34a0401628670cf4329b0d1f281a378ef9a6ee6",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n112/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 80,
+      "imageSha256": "c32597c62d5a558393881a2df3d706733af0b3ade1a99af6aaf9501ae8f38734",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n113/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 81,
+      "imageSha256": "fd06a38e038f24fc7b4b4b15e3c3d455090fe964c84500795b8f8ba6361f6081",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n114/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 82,
+      "imageSha256": "960ea702690af968cb01601794d82c7f5957e89cfc65ad1d1dc1061fd4ccf628",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n115/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 83,
+      "imageSha256": "ad87b663f2afc284e759420bfcfe057a4ca2c13647c818c9c44e6c8aa5b8d7d4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n116/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 84,
+      "imageSha256": "0abd63e3550716b3ed4530bc8dace3c82caac1c35e1f25a14dfaa3b39ed4e417",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n117/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 85,
+      "imageSha256": "3b3dec064f546c130a82e0f1b17675da223ed8f80ee48c318dab92ae6a2e989d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n118/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 86,
+      "imageSha256": "d0324b3b617e43d5309e17e02daa00bf610fa231b3b76689874cf22e8962c65e",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n119/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 87,
+      "imageSha256": "4fcd34d2a1f834e41e2615b8c5ea31a1005e871966031158d6082661af925015",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n120/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 88,
+      "imageSha256": "95de1777cc04f318614b6e20c68d05483fce82ed4d653a462a79bd8e065795c4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n121/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 89,
+      "imageSha256": "ecb7a5b15df21f59e42d34ac8f55f45462bc2f7474e8916e69761918e3c9e3db",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n122/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 90,
+      "imageSha256": "c8f7b726004ca93570289d6368a23f1e86830790f6f631f3a5f2dfc79f322e82",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n123/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 91,
+      "imageSha256": "71eb105de8d2c27340176660eb5fab6ff0dbbcdeb5bd413e229abc1fec883a03",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n124/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 92,
+      "imageSha256": "298b8c97b6fa33d5e8199c6cf909b192b8a09260bc1631293bee2aca309112ee",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n125/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 93,
+      "imageSha256": "34d75e04f6da5f4ae0eaff9da78002ec71e166b6f25a95b4784f79e8ff30f85d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n126/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 94,
+      "imageSha256": "80b5740113f77385962630206345d886a098224df8293a944a6b5702db1b78c3",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n127/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 95,
+      "imageSha256": "24d4cc6b2130e0b97e1f9c78e22a8d0c98a1a5e388b49fb5496cfd1f56bcfa6f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n128/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 96,
+      "imageSha256": "935ead9679393ef80a347b18b525f15662e051ad5929c8d18445cfc759de47d5",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n129/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 97,
+      "imageSha256": "691c004dd7161e24b8e528f93e62e3683a7c6d45297631e4c3bfbd06004602d9",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n130/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 98,
+      "imageSha256": "56543f6b70b188dc70c88c2250767559e55d805eff2369fdb974f0c8ca9d9373",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n131/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 99,
+      "imageSha256": "65a28b4beccf2bf35b2ace4dabaddbd2a88d05481e348d7018f66c4ba404d43a",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n132/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 100,
+      "imageSha256": "a649818d81bb3f85de775489202502775f22c5c158a19e6cd821827c4cc37e48",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n133/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 101,
+      "imageSha256": "1d4daecb28bcc14a85eafc439731a9fb310f3c1aa637316f52e3e28ae05d500f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n134/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 102,
+      "imageSha256": "a91b40a69ade073aed938e2659fae4e43745af4bfb30cc8199143864940af408",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n135/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 103,
+      "imageSha256": "d1b51795e1d1421cc4f734fd42ead227d5a2c27dc4ccacc066a551203cda8251",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n136/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 104,
+      "imageSha256": "85fed8ba74a489a4d8707f67f32feecbc2712196df74a127fd0701377a5b5b28",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n137/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 105,
+      "imageSha256": "7ca09f2dd5461b426a56c92681637a168dc0b785577a2844943b703314a01c00",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n138/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 106,
+      "imageSha256": "61655c0d0048a6d408a3f185f34bbfcaa78a546830c510418fd411477625f2f4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n139/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 107,
+      "imageSha256": "2e57a98aff08cca256b0e73500927ea588f0adbe85182ed1b063372e3b334c4b",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n140/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 108,
+      "imageSha256": "13c7f201b447c334b27c3e9454fe4ad697ae485ba58970592f2cc28266eab355",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n141/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 109,
+      "imageSha256": "e367c052afed9da0af3eacf0affdc19c167023d78c71609e4323b9750d0662fc",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n142/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 110,
+      "imageSha256": "8fba3973863476b0a3e9dc55aa263b5a085e3e55174d298f97b379773e8d760c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n143/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 111,
+      "imageSha256": "1da2c022e847321b9b6fb40f30ab75cb4c5dc4a958d82e79454d38218fecbad6",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n144/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 112,
+      "imageSha256": "c300b2489400fbc28403b0d871309f33592a148c448891a8181f1b786561c467",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n145/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 113,
+      "imageSha256": "49581f94b1f5a123904ab8ad7d3771da7935eeec65a59a40dc515654a3f910af",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n146/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 114,
+      "imageSha256": "01863c263bee763bf6348c148c74f934986678bdf9a2b684a684e387b0196885",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n147/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 115,
+      "imageSha256": "92d80f3450f0eff926e3d17cd1434c13815ecd77d341756ee5fe5dec65e8dadb",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n148/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 116,
+      "imageSha256": "6d13cecd20a9b42f37f640d72e36d67fc352f52416ce4430f75f453ae5905dd4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n149/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 117,
+      "imageSha256": "610033b1c56fdd37bc6187f24c430144cd7bd96eef6e53139f5dcf2db8d08b9d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n150/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 118,
+      "imageSha256": "9d6894417ad92412f3c67ec4628e2471b06d2d8cf1904654b4ac77700bf1356c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n151/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 119,
+      "imageSha256": "0423621f1fac0955394bb1e6d3dacf873e45799c02b863b93e708e14928fb8ce",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n152/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 120,
+      "imageSha256": "51902c987f6873eab06534de85300979aef429a5339863fc504da334bc2ca993",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n153/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 121,
+      "imageSha256": "5f6520de2a1b4ab9d251ebc9a0ed0f2e23a3ef63bfefedafde3688bb40bf0285",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n154/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 122,
+      "imageSha256": "c557b63edaa12eba6af80adc3b603aa3ae39e375095bf0369d3347b86364da69",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n155/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 123,
+      "imageSha256": "f943bc11c5d0506782036b37346367d0bdae3c274e61939ad8fd109bbad61823",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n156/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 124,
+      "imageSha256": "8bb45fa459fcc5ab31bac1438ae9aa95bdb0d1ad6260dd8afc5218361852efdc",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n157/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 125,
+      "imageSha256": "1fc20eb75b17f5edd54e421745fbabae7472563364569754761fcc02e94510aa",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n158/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 126,
+      "imageSha256": "e52f55d7f54c3ac62d96a2bca6c58680c7c3359e6bebd8be652f30425acca36c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n159/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 127,
+      "imageSha256": "75327dc88de40c7c5ea4d36120d676344a0169a7d860ec01e86e81a3e752031d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n160/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 128,
+      "imageSha256": "e11b92437d9bab768a449c59fb330851bb369ba3b352a89f2dddf68e286fa013",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n161/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 129,
+      "imageSha256": "a1c60b4a5c992627f1bf9d052f184a521587ecbc304c461318f61e0ee5269792",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n162/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 130,
+      "imageSha256": "6a0b8551c5b0b094b2e48c7dc41e4a3cdb7d3504be54951ce681d648211975e3",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n163/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 131,
+      "imageSha256": "deffad08ee3a97ed4034040bed0cb5020eb62eb2fe55c6d8c6c32199552ec254",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n164/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 132,
+      "imageSha256": "711678770b981df9fea3d40749e580074c238999b6f0a8366ea640b851fd4173",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n165/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 133,
+      "imageSha256": "27c42de3f3bda78cedde087c21e8e9a0c637e480847a3bce6fa82d4d64c9c196",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n166/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 134,
+      "imageSha256": "5b9b96df5cf350e504c9ca42b49184b8731f9e94eba47d0185c4cd9d04500bb4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n167/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 135,
+      "imageSha256": "d196343963e18bfbebddc1636d0fe4370a7e325d1e592515232ab74c247628f8",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n168/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 136,
+      "imageSha256": "6fe40ad4033c659ce3e537941625bece401f36d5ad2a18d736414dd18623cb99",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n169/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 137,
+      "imageSha256": "1ee3f56426eb47b8f4c154a71b020519c8de1fd672d50d200497e3c2da994aa2",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n170/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 138,
+      "imageSha256": "f5d8f541f7f2e184c678a137b0ba811fde6c285e68fc4b8853acbaa5fa0b07cd",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n171/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 139,
+      "imageSha256": "8b39d2aba567e423172e5e339f3cf7d9f431a6a3b75b313a8c06fc0b1a7d570b",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n172/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 140,
+      "imageSha256": "b805c248ef9abd9b851c90a11253b4d9d136c6d469be3774be1bf3df1700438a",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n173/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 141,
+      "imageSha256": "d1a70c528d2d5b31fad94e953c0379dd8544c1c2fbfd8640865d13567a97aa2f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n174/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 142,
+      "imageSha256": "8196409a12b89ace96cd365db5ad3292fc1012f121cc0e6972b4acffc344dbba",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n175/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 143,
+      "imageSha256": "1473f86597badc8234eb247742f126e8158583dfcfc694f914a4550d6fc41fa0",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n176/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 144,
+      "imageSha256": "63c5947b8f82ba4d24cad14189a8454b45ff5783886ebb5c4a46b778bf2809a3",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n177/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 145,
+      "imageSha256": "0370426e11a0e6500c97f0dddbf343ce41450aebfd933358b02a4d7e51b12f64",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n178/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 146,
+      "imageSha256": "8302165730f89c91247fb99484c600b4e2c97f548404435351b0b1d120b0cef6",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n179/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 147,
+      "imageSha256": "d1574d4605f45f6180a376212e39b059f34f607fe5c37930c11ad84fa2551616",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n180/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 148,
+      "imageSha256": "26bcb45930ebaeb7bc39f53fd87e1d1f80c0dce077431564164c71ba6ddde481",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n181/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 149,
+      "imageSha256": "03cd26070bacb82d6e3401bac38c42163c6c59fbd6100c63d363d32fd45344e7",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n182/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 150,
+      "imageSha256": "e08903d5c49e9e6f1ea057c37ba4d61f744f07ece6798f5c2014d8069e0b0732",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n183/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 151,
+      "imageSha256": "e3c11482cdca3b687468ea29cd678919c25fa006ddfe6c4356f54f338d5da4d5",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n184/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 152,
+      "imageSha256": "525eacc2496c9286d1be5edbbf697709eb3c82a7f7f11761ad014782342b785f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n185/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 153,
+      "imageSha256": "0defefaf3a430d7988d647ac6f0898983cc4a50e2ebb8586b6ecc97916863fb4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n186/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 154,
+      "imageSha256": "9f1f5d13ad9b2e9caa3ea3ec8dbe23f435c7c28c2e45523258ad11ca8721d16b",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n187/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 155,
+      "imageSha256": "6567bb441ae19f00c945c726255dfdd3ebeb81e5a52febf599f336adc273b71d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n188/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 156,
+      "imageSha256": "fde2fdafc862d50ef602645e475fa4da37242dfe7349dbfe314450267a889b65",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n189/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 157,
+      "imageSha256": "b29f7a1acaa0f7176e9f7bebc981aeccac29835295b74d6c38c3993babcca1e1",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n190/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 158,
+      "imageSha256": "9243dca09243ad5ec5ace4b69fcdc6237237956a2b5ff7f62d98e4f4b4bc5c5f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n191/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 159,
+      "imageSha256": "501811a5b3153ac75c52306547f930ea6d02ffdca1c28f17e6167a6bd588de6d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n192/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 160,
+      "imageSha256": "6af349bb6219563a5f163ab5bd340130ed0cc88eb88e075a36d4527d211c8aa9",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n193/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 161,
+      "imageSha256": "7595b2b8e7b171af16e4c8cbe794674e759af0a3925810bb34dcbcbadc86c20c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n194/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 162,
+      "imageSha256": "3e087fe84f0dea8a5cb13a44c4cb0afbee954e34c713ec65a0605143f2193e57",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n195/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 163,
+      "imageSha256": "18d8749fa0917b2b9dd5d57ff234220da4961371f5e81154429b1544142a2c9d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n196/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 164,
+      "imageSha256": "d20fdecae3f8b6d2195c767748ad518df837324ac90afb484d09a25017aeff66",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n197/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 165,
+      "imageSha256": "cdcafdd9816faed10e14843903f7cac658e5aaa42f4f5f07eff2a5b7a1e0c0ca",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n198/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 166,
+      "imageSha256": "b012d0453e61ebb017e5117b4909900050a97f62ba3f214e228257c89c9e114c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n199/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 167,
+      "imageSha256": "352d83a121607a7c7f75a3f85ccb4e2e9fa0c36831a85401732130e437c49ecd",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n200/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 168,
+      "imageSha256": "d94bf7cbd44245d02b0e4b2a068a6e97ccf0e11eb5a9e2e8b0155520337340ed",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n201/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 169,
+      "imageSha256": "8b58d6bb1e08e082b8df34d45ee9c75d7bc3be0b6a6d7ce68bc0d39cdfb96e42",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n202/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 170,
+      "imageSha256": "4b9ad97d6ac7f322aaff88f2a4e09aee35f323f53d6d058955d7b61945e1902b",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n203/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 171,
+      "imageSha256": "262e3decfa2cd80230a8c81cd74824ffdef64dc508b6ca59a9a83ceee069087f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n204/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 172,
+      "imageSha256": "5bf8fdd805b4a2bbe3f0fbb0cfbcd2ae3e6f31d8adfb21d6601238f0052d5dea",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n205/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 173,
+      "imageSha256": "0301b9b34debf76289ee2f70b48f1cd73220d8a3c62bcba0632e98c9e0314752",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n206/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 174,
+      "imageSha256": "e476640a6f13201aa102715cea0eb034e0c3d75cd05aec97a151c686d693c3b4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n207/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 175,
+      "imageSha256": "aae5ecc07b4a1b0b03fc390d099912a9a98e61b58a4076a8230dfade0fd1dbba",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n208/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 176,
+      "imageSha256": "7f0863141b43a96e2ae7c4bbdcb3e961636c025534356ca4a7f8c8fdafa82646",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n209/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 177,
+      "imageSha256": "dfaef7878774cc2218fbbc38bf48eb9c8f4254882f7adb2fcc484b5adfd9f859",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n210/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 178,
+      "imageSha256": "744cf3bfc664259cf71714889effd5743214e2f01c0e1a65f535ef321383aea3",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n211/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 179,
+      "imageSha256": "6446b140cb4e4ac1c7d2f66ac0b25ca3f0773aa3dd71d666217ea703911e7f3e",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n212/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 180,
+      "imageSha256": "4a7ee9440fc89f7cd00d60ee9f830cb574f1c8c36220343af66a1fc123d57bab",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n213/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 181,
+      "imageSha256": "7aa2a8c03e72f82f518bf4dec695b608469ab6e4ad5f1179153144a57e64ea4d",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n214/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 182,
+      "imageSha256": "a54ee508415ee683907b10484e7ba048ad0c0245384e50300ca839f55e8f872f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n215/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 183,
+      "imageSha256": "efe0da6d76189a02f11e1aa58d7b7216c30a868c1a5ab2d7db05ec884ccee203",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n216/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 184,
+      "imageSha256": "1abc7f43ef8dba39a08b2fe53788641d2b0eb0fa16b920515802c468dec10d5a",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n217/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 185,
+      "imageSha256": "7b6e70f09d6cc5ca19e7df09d0e363586586fc6de994e50f504d6a4f2eec0418",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n218/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 186,
+      "imageSha256": "bbaf5e7fe561fba314778ff40648baf7ab288943f180827021f521fd74f243ba",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n219/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 187,
+      "imageSha256": "ff3756f6e6bca517044bb6fc309a81c3e20a86122b5fd72adfcb4e49bf019fc4",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n220/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 188,
+      "imageSha256": "686196c807a68417b45df412745df07d875473207f2885e0731a1cfd0787b241",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n221/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 189,
+      "imageSha256": "af9ee601ed3cc20bde38c915ae79000fdefbe8a580648889cde18eeecc7b134c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n222/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 190,
+      "imageSha256": "8d4fe69281b7e95bc653ec71384f6cc7314d865823e66ec0db69f10aa62936c5",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n223/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 191,
+      "imageSha256": "9d85b25c3ddb6a2da8c2a8ac841574439ef7ba55733bced456272bf89ab1175f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n224/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 192,
+      "imageSha256": "2090c0be5bb958f7e222c5901f86c43cadd68650fa3157a62ea1cc3331cb43e1",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n225/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 193,
+      "imageSha256": "ee6bd15cb17363dc08e05e74be6890414ef27540aba72a21b73259dc3023690c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n226/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 194,
+      "imageSha256": "fbca1a819abc550d9980e3571385ea0651781cea1aeb88971d0b14e30f7ae130",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n227/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 195,
+      "imageSha256": "2d38a6abf076349cc3b895bb268495bcb7f020ae403265659ef957a2c18c9084",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n228/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 196,
+      "imageSha256": "2b29b536de20cd568aaa98f75db1662bd628fec9783535b49d773706d3e3a63e",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n229/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 197,
+      "imageSha256": "c9b5021e4a583d34aea28e0948d470d6734a5ba66ab6caf73e3fd39e698ee055",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n230/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 198,
+      "imageSha256": "050b53dcf41c0d7335f8d07877b0b5ec39cec209313ccb7eee3a5da703d14fec",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n231/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 199,
+      "imageSha256": "6a36387fb965bc507a6c23e3a12d64f9491176de8aa9d0604868ee6462f7b17f",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n232/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 200,
+      "imageSha256": "634f993c3ce530df0f326552d8cb8cea57b98e192df2f4346a72d02f53d8dbb6",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n233/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 201,
+      "imageSha256": "ee59c1ca01c02a3c09b0630fe14a901d67280427b38d35b3b7cbb464ec956c1c",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n234/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 202,
+      "imageSha256": "5353e7ffadfd7ba5b4e060a46ef40067093ba41b31086422d493111be9f4834b",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n235/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 203,
+      "imageSha256": "91213aed40fc2bfe4a3a3b757530d43d98f9864cb73de1e78326683494b8a1ba",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n236/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 204,
+      "imageSha256": "3fc08b56d0a4864a04c3081b8afe26739f0872da84daaa7746c949ebe9bd3064",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n237/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 205,
+      "imageSha256": "16bb6324d53c7989dda0a5818cee4a0290b2fc975329862fe772e6a5cbb81a83",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n238/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 206,
+      "imageSha256": "d9cd0c38625ac25cdf8b63bb94692940c2483afc998e6193ad311672cde1e0f3",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n239/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 207,
+      "imageSha256": "fa760b5a701d734b7e46527250bccdd72b30a821f4d604ca1804ee2be9f132b3",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n240/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 208,
+      "imageSha256": "f332dbf7d5fc6b7dc740a578c3330f9548e27b159c94b24d58d523b7bccca657",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n241/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 209,
+      "imageSha256": "0f56e9ca34ca8408ba44b98702350995fdff5393e779d5ce659c2e3ab93a0515",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n242/mode/1up",
+      "selectedBodyRead": true
+    },
+    {
+      "page": 210,
+      "imageSha256": "f0b30c80353e34e797d61669e84ba28c0998b3e44f6838179a5b9c34b76beebe",
+      "width": 1913,
+      "height": 3333,
+      "scanUrl": "https://archive.org/details/sacredbooksofchi16conf/page/n243/mode/1up",
+      "selectedBodyRead": true
+    }
+  ],
+  "passages": [
+    {
+      "id": "legge-01-judgment",
+      "pages": [
+        57
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-01-line-1",
+      "pages": [
+        57
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-01-line-2",
+      "pages": [
+        57
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-01-line-3",
+      "pages": [
+        57
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-01-line-4",
+      "pages": [
+        57
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-01-line-5",
+      "pages": [
+        57
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-01-line-6",
+      "pages": [
+        58
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-01-special",
+      "pages": [
+        58
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-judgment",
+      "pages": [
+        59,
+        60
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-line-1",
+      "pages": [
+        60
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-line-2",
+      "pages": [
+        60
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-line-3",
+      "pages": [
+        60
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-line-4",
+      "pages": [
+        60
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-line-5",
+      "pages": [
+        60
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-line-6",
+      "pages": [
+        61
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-02-special",
+      "pages": [
+        61
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-03-judgment",
+      "pages": [
+        62
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-03-line-1",
+      "pages": [
+        62
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-03-line-2",
+      "pages": [
+        62
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-03-line-3",
+      "pages": [
+        62
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-03-line-4",
+      "pages": [
+        63
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-03-line-5",
+      "pages": [
+        63
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-03-line-6",
+      "pages": [
+        63
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-04-judgment",
+      "pages": [
+        64,
+        65
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-04-line-1",
+      "pages": [
+        65
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-04-line-2",
+      "pages": [
+        65
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-04-line-3",
+      "pages": [
+        65
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-04-line-4",
+      "pages": [
+        65
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-04-line-5",
+      "pages": [
+        65
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-04-line-6",
+      "pages": [
+        65,
+        66
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-05-judgment",
+      "pages": [
+        67
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-05-line-1",
+      "pages": [
+        67
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-05-line-2",
+      "pages": [
+        67
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-05-line-3",
+      "pages": [
+        67
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-05-line-4",
+      "pages": [
+        67
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-05-line-5",
+      "pages": [
+        67
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-05-line-6",
+      "pages": [
+        67,
+        68
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-06-judgment",
+      "pages": [
+        69
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-06-line-1",
+      "pages": [
+        69
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-06-line-2",
+      "pages": [
+        69
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-06-line-3",
+      "pages": [
+        69,
+        70
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-06-line-4",
+      "pages": [
+        70
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-06-line-5",
+      "pages": [
+        70
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-06-line-6",
+      "pages": [
+        70
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-07-judgment",
+      "pages": [
+        71,
+        72
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-07-line-1",
+      "pages": [
+        72
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-07-line-2",
+      "pages": [
+        72
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-07-line-3",
+      "pages": [
+        72
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-07-line-4",
+      "pages": [
+        72
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-07-line-5",
+      "pages": [
+        72
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-07-line-6",
+      "pages": [
+        72
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-08-judgment",
+      "pages": [
+        73,
+        74
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-08-line-1",
+      "pages": [
+        74
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-08-line-2",
+      "pages": [
+        74
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-08-line-3",
+      "pages": [
+        74
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-08-line-4",
+      "pages": [
+        74,
+        75
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-08-line-5",
+      "pages": [
+        75
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-08-line-6",
+      "pages": [
+        75
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-09-judgment",
+      "pages": [
+        76
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-09-line-1",
+      "pages": [
+        76
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-09-line-2",
+      "pages": [
+        76
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-09-line-3",
+      "pages": [
+        77
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-09-line-4",
+      "pages": [
+        77
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-09-line-5",
+      "pages": [
+        77
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-09-line-6",
+      "pages": [
+        77
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-10-judgment",
+      "pages": [
+        78
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-10-line-1",
+      "pages": [
+        79
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-10-line-2",
+      "pages": [
+        79
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-10-line-3",
+      "pages": [
+        79
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-10-line-4",
+      "pages": [
+        79
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-10-line-5",
+      "pages": [
+        79
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-10-line-6",
+      "pages": [
+        79,
+        80
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-11-judgment",
+      "pages": [
+        81
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-11-line-1",
+      "pages": [
+        81
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-11-line-2",
+      "pages": [
+        81
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-11-line-3",
+      "pages": [
+        81
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-11-line-4",
+      "pages": [
+        81,
+        82
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-11-line-5",
+      "pages": [
+        82
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-11-line-6",
+      "pages": [
+        82
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-12-judgment",
+      "pages": [
+        83,
+        84
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-12-line-1",
+      "pages": [
+        84
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-12-line-2",
+      "pages": [
+        84
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-12-line-3",
+      "pages": [
+        84
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-12-line-4",
+      "pages": [
+        84
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-12-line-5",
+      "pages": [
+        84,
+        85
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Printed pp.84–85 independently rechecked: quotation and exclamations agree. Straight/curly quotes and surrounding spaces are reader typography; no word or punctuation sign is changed."
+    },
+    {
+      "id": "legge-12-line-6",
+      "pages": [
+        85
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-13-judgment",
+      "pages": [
+        86
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-13-line-1",
+      "pages": [
+        86
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-13-line-2",
+      "pages": [
+        86
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-13-line-3",
+      "pages": [
+        86
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-13-line-4",
+      "pages": [
+        86
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-13-line-5",
+      "pages": [
+        86
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-13-line-6",
+      "pages": [
+        86,
+        87
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-14-judgment",
+      "pages": [
+        88
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-14-line-1",
+      "pages": [
+        88
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-14-line-2",
+      "pages": [
+        88
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-14-line-3",
+      "pages": [
+        88
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-14-line-4",
+      "pages": [
+        88
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-14-line-5",
+      "pages": [
+        88
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-14-line-6",
+      "pages": [
+        88
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-15-judgment",
+      "pages": [
+        89
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-15-line-1",
+      "pages": [
+        89,
+        90
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-15-line-2",
+      "pages": [
+        90
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-15-line-3",
+      "pages": [
+        90
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-15-line-4",
+      "pages": [
+        90
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-15-line-5",
+      "pages": [
+        90
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-15-line-6",
+      "pages": [
+        90
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-16-judgment",
+      "pages": [
+        91
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-16-line-1",
+      "pages": [
+        91
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-16-line-2",
+      "pages": [
+        91
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-16-line-3",
+      "pages": [
+        91
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "p91 has a segmented long dash. Retain the existing em-dash reading approximation; number of physical types/segments remains unresolved."
+    },
+    {
+      "id": "legge-16-line-4",
+      "pages": [
+        91,
+        92
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-16-line-5",
+      "pages": [
+        92
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-16-line-6",
+      "pages": [
+        92
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-17-judgment",
+      "pages": [
+        93
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-17-line-1",
+      "pages": [
+        93
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-17-line-2",
+      "pages": [
+        93
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-17-line-3",
+      "pages": [
+        93
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-17-line-4",
+      "pages": [
+        93
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-17-line-5",
+      "pages": [
+        94
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-17-line-6",
+      "pages": [
+        94
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-18-judgment",
+      "pages": [
+        95
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-18-line-1",
+      "pages": [
+        95
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-18-line-2",
+      "pages": [
+        95
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-18-line-3",
+      "pages": [
+        95
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-18-line-4",
+      "pages": [
+        95,
+        96
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-18-line-5",
+      "pages": [
+        96
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-18-line-6",
+      "pages": [
+        96
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-19-judgment",
+      "pages": [
+        97
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-19-line-1",
+      "pages": [
+        97,
+        98
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-19-line-2",
+      "pages": [
+        98
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-19-line-3",
+      "pages": [
+        98
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-19-line-4",
+      "pages": [
+        98
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-19-line-5",
+      "pages": [
+        98
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-19-line-6",
+      "pages": [
+        98
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-20-judgment",
+      "pages": [
+        99,
+        100
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-20-line-1",
+      "pages": [
+        100
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-20-line-2",
+      "pages": [
+        100
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-20-line-3",
+      "pages": [
+        100
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "p100 has an indeterminate small raised mark between own and life. Retain own life as the declared reading-layer choice; mark identity is unresolved."
+    },
+    {
+      "id": "legge-20-line-4",
+      "pages": [
+        100
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-20-line-5",
+      "pages": [
+        100
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-20-line-6",
+      "pages": [
+        100
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-21-judgment",
+      "pages": [
+        101
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-21-line-1",
+      "pages": [
+        101
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-21-line-2",
+      "pages": [
+        101
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-21-line-3",
+      "pages": [
+        102
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-21-line-4",
+      "pages": [
+        102
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-21-line-5",
+      "pages": [
+        102
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-21-line-6",
+      "pages": [
+        102
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-22-judgment",
+      "pages": [
+        103
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-22-line-1",
+      "pages": [
+        104
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-22-line-2",
+      "pages": [
+        104
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-22-line-3",
+      "pages": [
+        104
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-22-line-4",
+      "pages": [
+        104
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-22-line-5",
+      "pages": [
+        104
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-22-line-6",
+      "pages": [
+        104
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-23-judgment",
+      "pages": [
+        105
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-23-line-1",
+      "pages": [
+        106
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-23-line-2",
+      "pages": [
+        106
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-23-line-3",
+      "pages": [
+        106
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-23-line-4",
+      "pages": [
+        106
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-23-line-5",
+      "pages": [
+        106
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-23-line-6",
+      "pages": [
+        106
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-24-judgment",
+      "pages": [
+        107,
+        108
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-24-line-1",
+      "pages": [
+        108
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-24-line-2",
+      "pages": [
+        108
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-24-line-3",
+      "pages": [
+        108
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-24-line-4",
+      "pages": [
+        108
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-24-line-5",
+      "pages": [
+        108
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-24-line-6",
+      "pages": [
+        108
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-25-judgment",
+      "pages": [
+        109,
+        110
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-25-line-1",
+      "pages": [
+        110
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-25-line-2",
+      "pages": [
+        110
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-25-line-3",
+      "pages": [
+        110,
+        111
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-25-line-4",
+      "pages": [
+        111
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-25-line-5",
+      "pages": [
+        111
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-25-line-6",
+      "pages": [
+        111
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-26-judgment",
+      "pages": [
+        112
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-26-line-1",
+      "pages": [
+        112
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-26-line-2",
+      "pages": [
+        112
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-26-line-3",
+      "pages": [
+        112,
+        113
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-26-line-4",
+      "pages": [
+        113
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-26-line-5",
+      "pages": [
+        113
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-26-line-6",
+      "pages": [
+        113
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-27-judgment",
+      "pages": [
+        114
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-27-line-1",
+      "pages": [
+        114
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-27-line-2",
+      "pages": [
+        114
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-27-line-3",
+      "pages": [
+        114
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-27-line-4",
+      "pages": [
+        115
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-27-line-5",
+      "pages": [
+        115
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-27-line-6",
+      "pages": [
+        115
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-28-judgment",
+      "pages": [
+        116
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-28-line-1",
+      "pages": [
+        116
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-28-line-2",
+      "pages": [
+        116,
+        117
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-28-line-3",
+      "pages": [
+        117
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-28-line-4",
+      "pages": [
+        117
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-28-line-5",
+      "pages": [
+        117
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-28-line-6",
+      "pages": [
+        117
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-29-judgment",
+      "pages": [
+        118
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-29-line-1",
+      "pages": [
+        118
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-29-line-2",
+      "pages": [
+        118,
+        119
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-29-line-3",
+      "pages": [
+        119
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-29-line-4",
+      "pages": [
+        119
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-29-line-5",
+      "pages": [
+        119
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-29-line-6",
+      "pages": [
+        119
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-30-judgment",
+      "pages": [
+        120,
+        121
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-30-line-1",
+      "pages": [
+        121
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-30-line-2",
+      "pages": [
+        121
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-30-line-3",
+      "pages": [
+        121
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-30-line-4",
+      "pages": [
+        121
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-30-line-5",
+      "pages": [
+        121
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-30-line-6",
+      "pages": [
+        122
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-31-judgment",
+      "pages": [
+        123
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-31-line-1",
+      "pages": [
+        123
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-31-line-2",
+      "pages": [
+        123
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-31-line-3",
+      "pages": [
+        123
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-31-line-4",
+      "pages": [
+        123
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-31-line-5",
+      "pages": [
+        123
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-31-line-6",
+      "pages": [
+        124
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-32-judgment",
+      "pages": [
+        125
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-32-line-1",
+      "pages": [
+        125,
+        126
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-32-line-2",
+      "pages": [
+        126
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-32-line-3",
+      "pages": [
+        126
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-32-line-4",
+      "pages": [
+        126
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-32-line-5",
+      "pages": [
+        126
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-32-line-6",
+      "pages": [
+        126
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-33-judgment",
+      "pages": [
+        127
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-33-line-1",
+      "pages": [
+        127
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-33-line-2",
+      "pages": [
+        128
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-33-line-3",
+      "pages": [
+        128
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-33-line-4",
+      "pages": [
+        128
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-33-line-5",
+      "pages": [
+        128
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-33-line-6",
+      "pages": [
+        128
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-34-judgment",
+      "pages": [
+        129
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-34-line-1",
+      "pages": [
+        130
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-34-line-2",
+      "pages": [
+        130
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-34-line-3",
+      "pages": [
+        130
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-34-line-4",
+      "pages": [
+        130
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-34-line-5",
+      "pages": [
+        130
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-34-line-6",
+      "pages": [
+        130
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-35-judgment",
+      "pages": [
+        131
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "p131 has the historical 3-shaped Roman letter. Existing Z is an explicit search/reading transliteration, not an asserted facsimile or exact Unicode identity."
+    },
+    {
+      "id": "legge-35-line-1",
+      "pages": [
+        132
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-35-line-2",
+      "pages": [
+        132
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-35-line-3",
+      "pages": [
+        132
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-35-line-4",
+      "pages": [
+        132
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-35-line-5",
+      "pages": [
+        132
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-35-line-6",
+      "pages": [
+        132,
+        133
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-36-judgment",
+      "pages": [
+        134,
+        135
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-36-line-1",
+      "pages": [
+        135
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-36-line-2",
+      "pages": [
+        135
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-36-line-3",
+      "pages": [
+        135
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-36-line-4",
+      "pages": [
+        135
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-36-line-5",
+      "pages": [
+        135
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-36-line-6",
+      "pages": [
+        135
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-37-judgment",
+      "pages": [
+        136,
+        137
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-37-line-1",
+      "pages": [
+        137
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-37-line-2",
+      "pages": [
+        137
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-37-line-3",
+      "pages": [
+        137
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-37-line-4",
+      "pages": [
+        137,
+        138
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-37-line-5",
+      "pages": [
+        138
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-37-line-6",
+      "pages": [
+        138
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-38-judgment",
+      "pages": [
+        139
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-38-line-1",
+      "pages": [
+        139
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-38-line-2",
+      "pages": [
+        139
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-38-line-3",
+      "pages": [
+        139
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-38-line-4",
+      "pages": [
+        139,
+        140
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-38-line-5",
+      "pages": [
+        140
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-38-line-6",
+      "pages": [
+        140
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-39-judgment",
+      "pages": [
+        141,
+        142
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-39-line-1",
+      "pages": [
+        142
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-39-line-2",
+      "pages": [
+        142
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-39-line-3",
+      "pages": [
+        142
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-39-line-4",
+      "pages": [
+        142
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-39-line-5",
+      "pages": [
+        142
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-39-line-6",
+      "pages": [
+        142,
+        143
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-40-judgment",
+      "pages": [
+        144
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-40-line-1",
+      "pages": [
+        144
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-40-line-2",
+      "pages": [
+        145
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-40-line-3",
+      "pages": [
+        145
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-40-line-4",
+      "pages": [
+        145
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-40-line-5",
+      "pages": [
+        145
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-40-line-6",
+      "pages": [
+        145
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-41-judgment",
+      "pages": [
+        146,
+        147
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-41-line-1",
+      "pages": [
+        147
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-41-line-2",
+      "pages": [
+        147
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-41-line-3",
+      "pages": [
+        147
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-41-line-4",
+      "pages": [
+        147
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-41-line-5",
+      "pages": [
+        147
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-41-line-6",
+      "pages": [
+        148
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-42-judgment",
+      "pages": [
+        149
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-42-line-1",
+      "pages": [
+        149,
+        150
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-42-line-2",
+      "pages": [
+        150
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-42-line-3",
+      "pages": [
+        150
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-42-line-4",
+      "pages": [
+        150
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-42-line-5",
+      "pages": [
+        150
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-42-line-6",
+      "pages": [
+        150
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-43-judgment",
+      "pages": [
+        151,
+        152
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-43-line-1",
+      "pages": [
+        152
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-43-line-2",
+      "pages": [
+        152
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-43-line-3",
+      "pages": [
+        152
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-43-line-4",
+      "pages": [
+        153
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-43-line-5",
+      "pages": [
+        153
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-43-line-6",
+      "pages": [
+        153
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-44-judgment",
+      "pages": [
+        154
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-44-line-1",
+      "pages": [
+        155
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-44-line-2",
+      "pages": [
+        155
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-44-line-3",
+      "pages": [
+        155
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-44-line-4",
+      "pages": [
+        155
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-44-line-5",
+      "pages": [
+        155
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-44-line-6",
+      "pages": [
+        155
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-45-judgment",
+      "pages": [
+        156,
+        157
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "p156 has the same class of 3-shaped Roman letter; retain the documented reading spelling Zhui. The independent-reader Unicode approximation is not adopted as an exact character identification."
+    },
+    {
+      "id": "legge-45-line-1",
+      "pages": [
+        157,
+        158
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-45-line-2",
+      "pages": [
+        158
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-45-line-3",
+      "pages": [
+        158
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-45-line-4",
+      "pages": [
+        158
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-45-line-5",
+      "pages": [
+        158
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-45-line-6",
+      "pages": [
+        158
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-46-judgment",
+      "pages": [
+        159,
+        160
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-46-line-1",
+      "pages": [
+        160
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-46-line-2",
+      "pages": [
+        160
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-46-line-3",
+      "pages": [
+        160
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-46-line-4",
+      "pages": [
+        160
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-46-line-5",
+      "pages": [
+        160
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-46-line-6",
+      "pages": [
+        160
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-47-judgment",
+      "pages": [
+        161,
+        162
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-47-line-1",
+      "pages": [
+        162
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-47-line-2",
+      "pages": [
+        162
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-47-line-3",
+      "pages": [
+        162
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-47-line-4",
+      "pages": [
+        162
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-47-line-5",
+      "pages": [
+        163
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-47-line-6",
+      "pages": [
+        163
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-48-judgment",
+      "pages": [
+        164,
+        165
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "p164 has the same historical 3-shaped letter; retain documented Zing reading spelling with glyph uncertainty explicitly recorded."
+    },
+    {
+      "id": "legge-48-line-1",
+      "pages": [
+        165
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-48-line-2",
+      "pages": [
+        165
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-48-line-3",
+      "pages": [
+        165
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-48-line-4",
+      "pages": [
+        166
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-48-line-5",
+      "pages": [
+        166
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-48-line-6",
+      "pages": [
+        166
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-49-judgment",
+      "pages": [
+        167
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-49-line-1",
+      "pages": [
+        167
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-49-line-2",
+      "pages": [
+        168
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-49-line-3",
+      "pages": [
+        168
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-49-line-4",
+      "pages": [
+        168
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-49-line-5",
+      "pages": [
+        168
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-49-line-6",
+      "pages": [
+        168
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-50-judgment",
+      "pages": [
+        169
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-50-line-1",
+      "pages": [
+        169,
+        170
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-50-line-2",
+      "pages": [
+        170
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-50-line-3",
+      "pages": [
+        170
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-50-line-4",
+      "pages": [
+        170
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-50-line-5",
+      "pages": [
+        171
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-50-line-6",
+      "pages": [
+        171
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-51-judgment",
+      "pages": [
+        172,
+        173
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-51-line-1",
+      "pages": [
+        173
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-51-line-2",
+      "pages": [
+        173
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-51-line-3",
+      "pages": [
+        173
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-51-line-4",
+      "pages": [
+        174
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-51-line-5",
+      "pages": [
+        174
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-51-line-6",
+      "pages": [
+        174
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-52-judgment",
+      "pages": [
+        175,
+        176
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-52-line-1",
+      "pages": [
+        176
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-52-line-2",
+      "pages": [
+        176
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-52-line-3",
+      "pages": [
+        176
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-52-line-4",
+      "pages": [
+        176
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-52-line-5",
+      "pages": [
+        176
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-52-line-6",
+      "pages": [
+        176,
+        177
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-53-judgment",
+      "pages": [
+        178
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-53-line-1",
+      "pages": [
+        178
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-53-line-2",
+      "pages": [
+        179
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-53-line-3",
+      "pages": [
+        179
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-53-line-4",
+      "pages": [
+        179
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-53-line-5",
+      "pages": [
+        179
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-53-line-6",
+      "pages": [
+        179
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-54-judgment",
+      "pages": [
+        180
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-54-line-1",
+      "pages": [
+        181,
+        182
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-54-line-2",
+      "pages": [
+        182
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-54-line-3",
+      "pages": [
+        182
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-54-line-4",
+      "pages": [
+        182
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-54-line-5",
+      "pages": [
+        182
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-54-line-6",
+      "pages": [
+        182
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-55-judgment",
+      "pages": [
+        183,
+        184
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-55-line-1",
+      "pages": [
+        185
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-55-line-2",
+      "pages": [
+        185
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-55-line-3",
+      "pages": [
+        185
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-55-line-4",
+      "pages": [
+        185
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-55-line-5",
+      "pages": [
+        185
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-55-line-6",
+      "pages": [
+        185,
+        186
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-56-judgment",
+      "pages": [
+        187
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-56-line-1",
+      "pages": [
+        187
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-56-line-2",
+      "pages": [
+        188
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-56-line-3",
+      "pages": [
+        188
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-56-line-4",
+      "pages": [
+        188
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-56-line-5",
+      "pages": [
+        188
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-56-line-6",
+      "pages": [
+        188
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-57-judgment",
+      "pages": [
+        189,
+        190
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-57-line-1",
+      "pages": [
+        190
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-57-line-2",
+      "pages": [
+        190
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-57-line-3",
+      "pages": [
+        190
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-57-line-4",
+      "pages": [
+        190
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-57-line-5",
+      "pages": [
+        190,
+        191
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-57-line-6",
+      "pages": [
+        191
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-58-judgment",
+      "pages": [
+        192
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-58-line-1",
+      "pages": [
+        193
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-58-line-2",
+      "pages": [
+        193
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-58-line-3",
+      "pages": [
+        193
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-58-line-4",
+      "pages": [
+        193
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-58-line-5",
+      "pages": [
+        193
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-58-line-6",
+      "pages": [
+        193
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-59-judgment",
+      "pages": [
+        194,
+        195
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-59-line-1",
+      "pages": [
+        195
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-59-line-2",
+      "pages": [
+        195
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-59-line-3",
+      "pages": [
+        195
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-59-line-4",
+      "pages": [
+        195
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-59-line-5",
+      "pages": [
+        195,
+        196
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-59-line-6",
+      "pages": [
+        196
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-60-judgment",
+      "pages": [
+        197
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-60-line-1",
+      "pages": [
+        197,
+        198
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-60-line-2",
+      "pages": [
+        198
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-60-line-3",
+      "pages": [
+        198
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-60-line-4",
+      "pages": [
+        198
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-60-line-5",
+      "pages": [
+        198
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-60-line-6",
+      "pages": [
+        198
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-61-judgment",
+      "pages": [
+        199,
+        200
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-61-line-1",
+      "pages": [
+        200
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-61-line-2",
+      "pages": [
+        200
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-61-line-3",
+      "pages": [
+        200
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-61-line-4",
+      "pages": [
+        200
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-61-line-5",
+      "pages": [
+        200
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-61-line-6",
+      "pages": [
+        200
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-62-judgment",
+      "pages": [
+        201,
+        202
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-62-line-1",
+      "pages": [
+        202
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-62-line-2",
+      "pages": [
+        202,
+        203
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-62-line-3",
+      "pages": [
+        203
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-62-line-4",
+      "pages": [
+        203
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-62-line-5",
+      "pages": [
+        203
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-62-line-6",
+      "pages": [
+        203
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-63-judgment",
+      "pages": [
+        204,
+        205
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "pp204–205: Kî and the 3-shaped initial are retained in the image evidence; existing Ki Zi is documented simplified reader romanization."
+    },
+    {
+      "id": "legge-63-line-1",
+      "pages": [
+        205
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-63-line-2",
+      "pages": [
+        205
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-63-line-3",
+      "pages": [
+        205
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "p205: the image reads Kâo followed by the 3-shaped letter. Kao Zung is the pre-existing documented simplified reader transliteration, not new translation."
+    },
+    {
+      "id": "legge-63-line-4",
+      "pages": [
+        206
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-63-line-5",
+      "pages": [
+        206
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-63-line-6",
+      "pages": [
+        206
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-64-judgment",
+      "pages": [
+        207
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "p207: retain documented Wei Zi search/reading spelling; the historical 3-shaped initial and diacritic are not claimed to be reproduced diplomatically."
+    },
+    {
+      "id": "legge-64-line-1",
+      "pages": [
+        208
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-64-line-2",
+      "pages": [
+        208
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-64-line-3",
+      "pages": [
+        208
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-64-line-4",
+      "pages": [
+        208
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-64-line-5",
+      "pages": [
+        208
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    },
+    {
+      "id": "legge-64-line-6",
+      "pages": [
+        208,
+        209,
+        210
+      ],
+      "result": "retained-after-image-comparison",
+      "decision": "Agreement after declared reader typography/romanization normalization; full image reading retained privately."
+    }
+  ],
+  "discrepancies": [
+    {
+      "id": "legge-12-line-5",
+      "pages": [
+        84,
+        85
+      ],
+      "previousReader": "In the fifth line, undivided, we see him who brings the distress and obstruction to a close,—the great man and fortunate. (But let him say), 'We may perish ! We may perish ! ' (so shall the state of things become firm, as if) bound to a clump of bushy mulberry trees.",
+      "independentImageReading": "In the fifth line, undivided, we see him who brings the distress and obstruction to a close,—the great man and fortunate. (But let him say), ‘We may perish ! We may perish !’ (so shall the state of things become firm, as if) bound to a clump of bushy mulberry trees.",
+      "decision": "retain-reader",
+      "reason": "Printed pp.84–85 independently rechecked: quotation and exclamations agree. Straight/curly quotes and surrounding spaces are reader typography; no word or punctuation sign is changed.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-16-line-3",
+      "pages": [
+        91
+      ],
+      "previousReader": "The third line, divided, shows one looking up (for favours), while he indulges the feeling of pleasure and satisfaction. If he would understand!—If he be late in doing so, there will indeed be occasion for repentance.",
+      "independentImageReading": "The third line, divided, shows one looking up (for favours), while he indulges the feeling of pleasure and satisfaction. If he would understand !—- If he be late in doing so, there will indeed be occasion for repentance.",
+      "decision": "retain-with-note",
+      "reason": "p91 has a segmented long dash. Retain the existing em-dash reading approximation; number of physical types/segments remains unresolved.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-20-line-3",
+      "pages": [
+        100
+      ],
+      "previousReader": "The third line, divided, shows one looking at (the course of) his own life, to advance or recede (accordingly).",
+      "independentImageReading": "The third line, divided, shows one looking at (the course of) his own·life, to advance or recede (accordingly).",
+      "decision": "retain-with-note",
+      "reason": "p100 has an indeterminate small raised mark between own and life. Retain own life as the declared reading-layer choice; mark identity is unresolved.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-35-judgment",
+      "pages": [
+        131
+      ],
+      "previousReader": "In Zin we see a prince who secures the tranquillity (of the people) presented on that account with numerous horses (by the king), and three times in a day received at interviews.",
+      "independentImageReading": "In Ʒin we see a prince who secures the tranquillity (of the people) presented on that account with numerous horses (by the king), and three times in a day received at interviews.",
+      "decision": "retain-display-transliteration",
+      "reason": "p131 has the historical 3-shaped Roman letter. Existing Z is an explicit search/reading transliteration, not an asserted facsimile or exact Unicode identity.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-45-judgment",
+      "pages": [
+        156,
+        157
+      ],
+      "previousReader": "In (the state denoted by) Zhui, the king will repair to his ancestral temple. It will be advantageous (also) to meet with the great man; and then there will be progress and success, though the advantage must come through firm correctness. The use of great victims will conduce to good fortune; and in whatever direction movement is made, it will be advantageous.",
+      "independentImageReading": "In (the state denoted by) Ȝhui, the king will repair to his ancestral temple. It will be advantageous (also) to meet with the great man; and then there will be progress and success, though the advantage must come through firm correctness. The use of great victims will conduce to good fortune; and in whatever direction movement is made, it will be advantageous.",
+      "decision": "retain-display-transliteration",
+      "reason": "p156 has the same class of 3-shaped Roman letter; retain the documented reading spelling Zhui. The independent-reader Unicode approximation is not adopted as an exact character identification.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-48-judgment",
+      "pages": [
+        164,
+        165
+      ],
+      "previousReader": "(Looking at) Zing, (we think of) how (the site of) a town may be changed, while (the fashion of) its wells undergoes no change. (The water of a well) never disappears and never receives (any great) increase, and those who come and those who go can draw and enjoy the benefit. If (the drawing) have nearly been accomplished, but, before the rope has quite reached the water, the bucket is broken, this is evil.",
+      "independentImageReading": "(Looking at) Ȝing, (we think of) how (the site of) a town may be changed, while (the fashion of) its wells undergoes no change. (The water of a well) never disappears and never receives (any great) increase, and those who come and those who go can draw and enjoy the benefit. If (the drawing) have nearly been accomplished, but, before the rope has quite reached the water, the bucket is broken, this is evil.",
+      "decision": "retain-display-transliteration",
+      "reason": "p164 has the same historical 3-shaped letter; retain documented Zing reading spelling with glyph uncertainty explicitly recorded.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-63-judgment",
+      "pages": [
+        204,
+        205
+      ],
+      "previousReader": "Ki Zi intimates progress and success in small matters. There will be advantage in being firm and correct. There has been good fortune in the beginning; there may be disorder in the end.",
+      "independentImageReading": "Kî Ȝî intimates progress and success in small matters. There will be advantage in being firm and correct. There has been good fortune in the beginning; there may be disorder in the end.",
+      "decision": "retain-display-transliteration",
+      "reason": "pp204–205: Kî and the 3-shaped initial are retained in the image evidence; existing Ki Zi is documented simplified reader romanization.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-63-line-3",
+      "pages": [
+        205
+      ],
+      "previousReader": "The third line, undivided, (suggests the case of) Kao Zung who attacked the Demon region, but was three years in subduing it. Small men should not be employed (in such enterprises).",
+      "independentImageReading": "The third line, undivided, (suggests the case of) Kâo Ȝung who attacked the Demon region, but was three years in subduing it. Small men should not be employed (in such enterprises).",
+      "decision": "retain-display-transliteration",
+      "reason": "p205: the image reads Kâo followed by the 3-shaped letter. Kao Zung is the pre-existing documented simplified reader transliteration, not new translation.",
+      "readerChanged": false
+    },
+    {
+      "id": "legge-64-judgment",
+      "pages": [
+        207
+      ],
+      "previousReader": "Wei Zi intimates progress and success (in the circumstances which it implies). (We see) a young fox that has nearly crossed (the stream), when its tail gets immersed. There will be no advantage in any way.",
+      "independentImageReading": "Wei Ȝî intimates progress and success (in the circumstances which it implies). (We see) a young fox that has nearly crossed (the stream), when its tail gets immersed. There will be no advantage in any way.",
+      "decision": "retain-display-transliteration",
+      "reason": "p207: retain documented Wei Zi search/reading spelling; the historical 3-shaped initial and diacritic are not claimed to be reproduced diplomatically.",
+      "readerChanged": false
+    }
+  ],
+  "highRiskChecks": [
+    {
+      "pages": [
+        58,
+        61
+      ],
+      "topic": "True seventh paragraphs Use Nine / Use Six",
+      "result": "Both present in the large-print body and correctly separate from small commentary."
+    },
+    {
+      "pages": [
+        65,
+        203
+      ],
+      "topic": "Unpaired printed parentheses",
+      "result": "Confirmed in this witness; neither conjecturally supplied nor deleted."
+    },
+    {
+      "pages": [
+        123,
+        137,
+        180
+      ],
+      "topic": "Multiple OCR segments for one passage on one page",
+      "result": "Coalesced for comparison only; source segments remain byte-for-byte unchanged."
+    },
+    {
+      "pages": [
+        208,
+        209,
+        210
+      ],
+      "topic": "Final line continuation across three pages",
+      "result": "Body continuations retained; small-print commentary excluded; con-/fidence joined in reader."
+    },
+    {
+      "pages": [
+        91,
+        100,
+        131,
+        164,
+        168,
+        203,
+        205
+      ],
+      "topic": "Punctuation, marks and historical letterforms",
+      "result": "Known-difference image adjudication completed; unresolved details explicitly retained."
+    }
+  ],
+  "unresolvedDetails": [
+    {
+      "id": "p91-segmented-dash",
+      "pages": [
+        91
+      ],
+      "passageIds": [
+        "legge-16-line-3"
+      ],
+      "issue": "The long dash is visibly interrupted; one damaged long type versus multiple short types cannot be established from this scan.",
+      "readerDecision": "Retain existing em dash; no conjectural duplication."
+    },
+    {
+      "id": "p100-small-mark",
+      "pages": [
+        100
+      ],
+      "passageIds": [
+        "legge-20-line-3"
+      ],
+      "issue": "Small raised mark between own and life has no secure character/punctuation identity.",
+      "readerDecision": "Retain own life; mark temporarily omitted in reader, explicitly documented here."
+    },
+    {
+      "id": "p168-raised-mark",
+      "pages": [
+        168
+      ],
+      "passageIds": [
+        "legge-49-line-3"
+      ],
+      "issue": "Full stop after evil is clear; a separate raised mark to its right is indeterminate.",
+      "readerDecision": "Retain evil. Though; no added colon or quote."
+    },
+    {
+      "id": "historical-3-shaped-letter",
+      "pages": [
+        131,
+        156,
+        164,
+        204,
+        205,
+        207
+      ],
+      "passageIds": [
+        "legge-35-judgment",
+        "legge-45-judgment",
+        "legge-48-judgment",
+        "legge-63-judgment",
+        "legge-63-line-3",
+        "legge-64-judgment"
+      ],
+      "issue": "Historical 3-shaped Roman letter is visually identifiable, but its exact modern Unicode correspondence was not established. Ʒ/Ȝ in independent readings are approximations only.",
+      "readerDecision": "Retain declared Z search/reading transliteration; no claim of a diplomatic character layer."
+    },
+    {
+      "id": "p203-hyphen-classification",
+      "pages": [
+        203
+      ],
+      "passageIds": [
+        "legge-62-line-6"
+      ],
+      "issue": "self- is printed at a line ending before produced; the scan alone cannot establish lexical versus line-break hyphen status.",
+      "readerDecision": "Retain self-produced as an explicit editorial preservation decision."
+    }
+  ],
+  "readerChanges": [],
+  "limitations": "AI image collation, not independent human double collation, expert review or peer review. A complete review record does not establish a measured accuracy rate or a diplomatic edition."
+}

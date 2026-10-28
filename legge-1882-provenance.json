@@ -1,9 +1,9 @@
 {
-  "id": "legge-1882-hexagram-texts-v0.1.1",
-  "version": "0.1.1",
-  "date": "2026-10-23",
-  "title": "James Legge, The Yî King (1882): 64 judgments, 384 line passages and two additional paragraphs",
-  "maintainer": "poplolioi11 / 一卦 yigua.art",
+  "id": "legge-1882-hexagram-texts-v0.2.0",
+  "version": "0.2.0",
+  "date": "2026-10-28",
+  "title": "Legge's Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition",
+  "maintainer": "曲宸宇（Chu, Chen-Yu；GitHub：poplolioi11）",
   "site": "https://yigua.art",
   "translator": "James Legge",
   "publication": {
@@ -41,12 +41,12 @@
     ]
   },
   "quality": {
-    "status": "ocr-assisted-initial-transcription",
+    "status": "ai-image-collated-reader",
     "diplomatic": false,
-    "allPagesImageReviewed": false,
+    "allPagesImageReviewed": true,
     "independentHumanCollation": false,
-    "judgmentReader": "Existing 64 reader strings preserved byte-for-byte; see legge-source-audit.json (2026-10-09). Their original ingestion is unrecorded. This import supplies a separate OCR layer, not a retroactive source-ingestion claim.",
-    "lineReader": "All 386 numbered passages structurally extracted from this witness OCR and read by AI; targeted scan inspection and corrections, not a complete visual proofreading.",
+    "judgmentReader": "The same 64 historical reader strings are retained and now independently image-compared in the 2026-10-28 review. Their original ingestion path remains unrecorded; the new review does not invent it.",
+    "lineReader": "All 384 lines and both additional paragraphs independently read against the selected large-print body on all 154 source pages, followed by full comparison and explicit adjudication; not human/expert collation.",
     "targetedScanPages": [
       58,
       61,
@@ -79,18 +79,25 @@
       210
     ],
     "targetedScanScope": "Images were opened to inspect selected phrases, extraction boundaries or continuation. Listing a page does not assert every glyph on that page was checked.",
-    "knownUncertainty": "No deliberately unresolved illegible word has been guessed. Residual OCR and typography errors may remain outside targeted checks; absence of an uncertainty marker is not a certainty claim."
+    "knownUncertainty": "Five grouped typography/character-identity details remain documented in legge-1882-image-collation.json. Reader approximations are not diplomatic reproductions. Residual errors may remain.",
+    "imageCollation": {
+      "date": "2026-10-28",
+      "sourceImages": 154,
+      "passages": 450,
+      "report": "legge-1882-image-collation.json",
+      "scope": "Selected large-print texts only, not every text layer on the page."
+    }
   },
   "layers": {
     "sourceText": "Selected upstream OCR tokens joined with spaces within OCR lines and newlines between lines/segments; numbering/headings/notes excluded. Not diplomatic transcription, not complete OCR XML; retains upstream OCR misreadings. sourceSegments records printed-page boundaries.",
-    "reader": "Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z.",
+    "reader": "Whitespace and punctuation spacing normalized; line-break hyphenation joined except long-continued and self-produced; explicit scan-checked changes in corrections. Existing judgment strings retained. Some reader romanizations simplify accents/italics and the historical 3-shaped consonant to Z. In version 0.2.0 all 450 reader strings are retained after independent image comparison; the original 3-shaped Roman letter is represented by declared Z reading/search transliteration, not an exact Unicode glyph identity.",
     "heading": "Modern site-authored navigation labels derived from line position/polarity; not verbatim Legge headings.",
     "name": "Simplified Legge romanization only; English navigation glosses elsewhere in the site are modern metadata, not Legge chapter titles."
   },
   "rights": {
     "historicalText": "Public domain historical English translation (1882); no CC condition is imposed on the historical text.",
     "archiveStatus": "Internet Archive item copyright-evidence states NOT_IN_COPYRIGHT (US); this is source evidence, not a universal jurisdictional legal guarantee.",
-    "originalMetadata": "Original modern metadata, documentation and arrangement: CC BY 4.0, attribution poplolioi11 / 一卦 yigua.art; applies only where new copyright exists.",
+    "originalMetadata": "Copyrightable original modern metadata, documentation and arrangement: CC BY 4.0, Chu, Chen-Yu / 曲宸宇 (GitHub poplolioi11); historical public-domain text remains unrestricted.",
     "metadataLicense": "https://creativecommons.org/licenses/by/4.0/",
     "images": "Linked, not redistributed in this data package. Repository/institution image terms remain distinct.",
     "wikisource": "Not a source of the exported text. Wikisource user-contributed editing/arrangement is not relicensed here."
@@ -98,9 +105,16 @@
   "aiUse": {
     "assistant": "OpenAI Codex",
     "model": "Underlying model identifier not exposed in this task; no guessed model version.",
-    "work": "Source research, deterministic OCR segmentation/format conversion, targeted visual inspection and editorial documentation.",
+    "work": "Prior OCR extraction plus 2026-10-28 complete scoped independent AI image reading, full comparison, high-risk image adjudication and deterministic export.",
     "ocr": "Existing Internet Archive OCR; engine/version not established by this import.",
-    "humanReview": "No independent human collation claimed."
+    "humanReview": "No independent human collation, expert review or peer review.",
+    "reviewModels": {
+      "gemini": "Gemini/Antigravity actual reported model gemini-3.8-flash-high for pp57–72.",
+      "nativeAgents": "Fresh Codex sub-agents; requested gpt-6.1-sol ultra for pp73–104 and121–210, requested gpt-6-astra ultra for pp105–120 and critical adjudication. Native execution telemetry did not independently expose exact model identity/usage.",
+      "humanCollation": false,
+      "expertReview": false,
+      "privateRecords": "Detailed prompts, workers, processing code and full internal review logs are retained privately, not included in the public package."
+    }
   },
   "corrections": [
     {
@@ -529,7 +543,7 @@
     },
     {
       "id": "legge-62-line-6",
-      "note": "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains the lexical hyphen in self-produced.",
+      "note": "Printed p. 203 has an unmatched closing parenthesis after situation; retained. Reader retains self-produced as an editorial preservation decision; lexical versus line-break status remains unresolved.",
       "page": 203
     },
     {
@@ -546,25 +560,36 @@
       "JSON parse",
       "450 unique IDs and fixed counts",
       "page URLs and lower-to-upper line order",
-      "64 historical judgment strings unchanged",
       "TXT reading-text round trip",
       "TEI secure parse and full reading/OCR/source-link round trip",
-      "TEI P5 4.12.0 Relax NG"
+      "TEI P5 4.12.0 Relax NG",
+      "450 reader strings unchanged from published v0.1.1",
+      "154 scoped source images and450 passage coverage",
+      "full discrepancy dispositions and high-risk review record"
     ],
     "notPerformed": [
       "independent human collation",
-      "full-image proofreading",
       "Schematron",
       "custom ODD",
-      "complete textual-variant apparatus"
+      "complete textual-variant apparatus",
+      "whole-book image collation outside the declared subset"
     ]
   },
   "publicationIdentifiers": {
-    "versionDoi": "10.5281/zenodo.23585522",
-    "versionDoiUrl": "https://doi.org/10.5281/zenodo.23585522",
-    "doiStateAtPreparation": "reserved; not yet published or registered at package preparation",
+    "versionDoi": "10.5281/zenodo.23723692",
+    "versionDoiUrl": "https://doi.org/10.5281/zenodo.23723692",
+    "conceptDoi": "10.5281/zenodo.23585521",
+    "conceptDoiUrl": "https://doi.org/10.5281/zenodo.23585521",
+    "doiStateAtPreparation": "reserved; publication and registration must be checked on the public record",
     "repository": "https://github.com/poplolioi11/yigua-legge-1882",
-    "releaseVersion": "0.1.1",
-    "statusNote": "Preparation-state metadata is historical. Check the public GitHub release and Zenodo record for current publication state; no concept DOI is asserted."
+    "releaseVersion": "0.2.0",
+    "previousVersionDoi": "10.5281/zenodo.23585522"
+  },
+  "imageCollationReport": "legge-1882-image-collation.json",
+  "institutionalCatalogLink": {
+    "url": "https://archive.org/details/sacredbooksofchi16conf",
+    "observed": "2026-10-28",
+    "linkedProjectDoi": "10.5281/zenodo.23585522",
+    "scope": "The Notes field links the preceding release as an informational resource, expressly without endorsement. This is not a new license grant or textual validation."
   }
 }
