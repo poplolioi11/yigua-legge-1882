@@ -1,10 +1,15 @@
-# Legge《易經》1882卦爻辭子集：AI影像覆核閱讀版
+# The Yî King（1882；James Legge；Princeton／Internet Archive sacredbooksofchi16conf）《易經》卦爻辭子集 / Hexagram-text Transcription dataset
 
 ## 摘要 / Abstract
 
-本資料以Princeton Theological Seminary Library藏、Internet Archive數位化的James Legge《The Yî King》（Oxford: Clarendon Press, 1882）為底本，整理印頁57–210的大字正文選集：64卦辭、384爻辭與乾坤用九、用六，共450段。v0.2.0對範圍內154幅影像另行AI讀字、全段對齊與差異回圖裁定，保留來源定位、閱讀文字及未解排印細節，供英譯《易經》檢索、引用及後續版本研究。此為選段閱讀版而非全書或摹真轉錄，未完成人類雙校，五組細節仍待釐清。
+James Legge（理雅各）的《The Sacred Books of China: The Texts of Confucianism. Part II. The Yî King》是1882年Oxford Clarendon Press出版的《易經》英譯卷，屬《東方聖書》第十六卷，含卦爻辭、經傳、導論與注釋。本資料供十九世紀漢學和經典翻譯比較，依Princeton Theological Seminary Library藏、Internet Archive數位化的見證本，整理印頁57–210共154幅影像的大字正文：64卦辭、384爻辭及用九、用六，共450段，提供JSON、TXT、TEI P5 XML及來源對應。本版完成指定範圍AI影像校讀，仍有五組排印細節未解，未完成人類雙校。
 
-This structured subset of James Legge's The Yî King (Oxford: Clarendon Press, 1882) uses the Princeton Theological Seminary Library witness digitized by Internet Archive. It covers the selected large-print body on printed pages 57–210: 64 judgments, 384 line passages and the additional Qian and Kun paragraphs, Use Nine and Use Six, totaling 450 passages. Version 0.2.0 adds independent AI readings of all 154 scoped images, full alignment and source-image adjudication, retaining locators, reader text and unresolved print details for discovery, citation and translation research. It is a selected reader edition, not the complete book or a diplomatic transcription; human double collation is incomplete and five grouped details remain unresolved.
+James Legge’s The Sacred Books of China: The Texts of Confucianism. Part II. The Yî King (Oxford: Clarendon Press, 1882), volume XVI of the Sacred Books of the East, translates the Yijing with related canonical material, introduction and commentary. This dataset supports nineteenth-century Sinology and translation comparison, using the Princeton Theological Seminary Library witness digitized by Internet Archive. It covers the large-print body across 154 images of printed pages 57–210: 64 judgments, 384 line passages and Use Nine and Use Six, totaling 450 passages in JSON, TXT and TEI P5 XML with source mappings. This AI-assisted transcription retains marked uncertainties; five groups of print details remain unresolved and human double collation is incomplete.
+
+原件與書目入口 / Source witness and catalogue:
+
+- [原件與館藏書目 / Source witness and catalogue](https://archive.org/details/sacredbooksofchi16conf)
+- [數位化平台書目 / Digitizing-platform metadata](https://archive.org/metadata/sacredbooksofchi16conf)
 
 版本 **0.2.0**；製備日期 **2026-10-28**。整理者：**曲宸宇（Chu, Chen-Yu；GitHub：poplolioi11）**；ORCID：[0009-0003-9738-6914](https://orcid.org/0009-0003-9738-6914)。歷史英文譯者為 **James Legge（理雅各）**，不是本資料集的現代整理者。
 
