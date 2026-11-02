@@ -1,5 +1,11 @@
 # Legge《易經》1882卦爻辭子集：AI影像覆核閱讀版
 
+## 摘要 / Abstract
+
+本資料以Princeton Theological Seminary Library藏、Internet Archive數位化的James Legge《The Yî King》（Oxford: Clarendon Press, 1882）為底本，整理印頁57–210的大字正文選集：64卦辭、384爻辭與乾坤用九、用六，共450段。v0.2.0對範圍內154幅影像另行AI讀字、全段對齊與差異回圖裁定，保留來源定位、閱讀文字及未解排印細節，供英譯《易經》檢索、引用及後續版本研究。此為選段閱讀版而非全書或摹真轉錄，未完成人類雙校，五組細節仍待釐清。
+
+This structured subset of James Legge's The Yî King (Oxford: Clarendon Press, 1882) uses the Princeton Theological Seminary Library witness digitized by Internet Archive. It covers the selected large-print body on printed pages 57–210: 64 judgments, 384 line passages and the additional Qian and Kun paragraphs, Use Nine and Use Six, totaling 450 passages. Version 0.2.0 adds independent AI readings of all 154 scoped images, full alignment and source-image adjudication, retaining locators, reader text and unresolved print details for discovery, citation and translation research. It is a selected reader edition, not the complete book or a diplomatic transcription; human double collation is incomplete and five grouped details remain unresolved.
+
 版本 **0.2.0**；製備日期 **2026-10-28**。整理者：**曲宸宇（Chu, Chen-Yu；GitHub：poplolioi11）**；ORCID：[0009-0003-9738-6914](https://orcid.org/0009-0003-9738-6914)。歷史英文譯者為 **James Legge（理雅各）**，不是本資料集的現代整理者。
 
 ## 固定版本與引用
