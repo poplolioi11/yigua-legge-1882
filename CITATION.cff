@@ -2,7 +2,7 @@ cff-version: 1.2.0
 type: dataset
 message: Please cite the fixed published version and separately identify James Legge, the 1882
   witness, printed page and passage ID. AI image collation is not scholarly certification.
-title: 'Legge''s Yî King (1882): Hexagram-Text Subset, AI Image-Collated Reader Edition'
+title: "The Yî King (1882; James Legge)《易經》卦爻辭子集 / Hexagram-text Transcription dataset"
 authors:
 - family-names: Chu
   given-names: Chen-Yu

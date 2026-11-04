@@ -1,4 +1,4 @@
-# The Yî King（1882；James Legge；Princeton／Internet Archive sacredbooksofchi16conf）《易經》卦爻辭子集 / Hexagram-text Transcription dataset
+# The Yî King (1882; James Legge)《易經》卦爻辭子集 / Hexagram-text Transcription dataset
 
 ## 摘要 / Abstract
 
